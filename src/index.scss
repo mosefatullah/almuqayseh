@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400&display=swap");
+$primary-color: #18191a;
+$primary-text-color: #fff;
+$primary-font: "Poppins", sans-serif;
+$secondary-color: #242526;
+$third-color: #007fff;
+
+@mixin image-center($url) {
+ background-image: url(unquote($url));
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+body::-webkit-scrollbar {
+ width: 0.25em;
+ background-color: rgba(255, 255, 255, 0.2);
+}
+body::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+ background-color: white;
+ outline: 1px solid #708090;
+}
+* {
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+ font-family: $primary-font;
+}
+body {
+ background-color: $secondary-color !important;
+ color: $primary-text-color;
+}
+
+/*** Common Things ***/
+.bg-custom {
+ background-color: $secondary-color;
+}
+.dn {
+ display: none;
+}
+mark {
+ border-radius: 0.4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-weight: 500;
+}
+.textsvg {
+ fill: white !important;
+}
+.title {
+ position: relative;
+ margin: 30px 0 19px 30px;
+ &:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  width: 6px;
+  height: 30px;
+  background-color: #e92f2f;
+ }
+}
+.break {
+ display: block;
+ visibility: hidden;
+ width: 100%;
+ height: 150px;
+}
+main {
+ padding-bottom: 50px;
+ background-color: $primary-color !important;
+ color: $primary-text-color;
+}
+
+/*** Navbar ***/
+.navbar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ background-color: rgba($primary-color, 0.7);
+ color: $primary-text-color;
+ backdrop-filter: blur(10px);
+ padding: 20px 0;
+ border-bottom: 1px solid rgba($primary-text-color, 0.1);
+
+ .navbar-brand {
+  color: $primary-text-color;
+  font-weight: 500;
+ }
+}
+
+main {
+ position: relative;
+ background-image: url("../images/interface/herobanner.jpg");
+ width: 100%;
+ height: 100vh;
+ & > div {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($primary-color, 0.1);
+  & > div {
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(
+    100deg,
+    $primary-color 25%,
+    rgba($primary-color, 0.9) 35%,
+    rgba($primary-color, 0.7) 45%,
+    rgba($primary-color, 0.5) 70%,
+    rgba($primary-color, 0.1) 90%,
+    rgba($primary-color, 0.1) 100%
+   );
+   & > div {
+    width: 100%;
+    .row {
+     width: 100%;
+     height: 100vh;
+     h1 {
+      font-size: 3.9rem;
+      font-weight: 500;
+      line-height: 4.56rem;
+      margin: 20px 0;
+      margin-top: 32px;
+     }
+     p {
+      max-width: 600px;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8rem;
+      margin: 0;
+      color: darken($primary-text-color, 25%);
+     }
+     button {
+      width: fit-content !important;
+      padding: 10px 25px !important;
+      font-size: 0.9rem !important;
+      margin-top: 40px;
+     }
+     .chip {
+      background-color: rgba($primary-color, 0.7);
+      color: $primary-text-color;
+      border: 1px solid rgba($primary-text-color, 0.7);
+      padding: 10px 20px;
+      width: fit-content;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      &:hover {
+       background-color: rgba($primary-color, 0.9);
+      }
+     }
+    }
+   }
+  }
+ }
+}
