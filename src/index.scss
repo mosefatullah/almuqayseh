@@ -6,41 +6,44 @@ $secondary-color: #242526;
 $third-color: #007fff;
 
 @mixin image-center($url) {
- background-image: url(unquote($url));
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
+  background-image: url(unquote($url));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 body::-webkit-scrollbar {
- width: 0.25em;
- background-color: rgba(255, 255, 255, 0.2);
+  width: 0.25em;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 body::-webkit-scrollbar-track {
- box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 body::-webkit-scrollbar-thumb {
- background-color: white;
- outline: 1px solid #708090;
+  background-color: white;
+  outline: 1px solid #708090;
 }
 * {
- box-sizing: border-box;
- scroll-behavior: smooth;
- font-family: $primary-font;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: $primary-font;
 }
 body {
- background-color: $secondary-color !important;
- color: $primary-text-color;
+  background-color: $secondary-color !important;
+  color: $primary-text-color;
 }
 
 /*** Common Things ***/
 .bg-custom {
- background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 .dn {
- display: none;
+  display: none;
 }
 mark {
- border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+button {
+  text-transform: uppercase;
 }
 h1,
 h2,
@@ -48,116 +51,210 @@ h3,
 h4,
 h5,
 h6 {
- font-weight: 500;
+  font-weight: 500;
 }
 .textsvg {
- fill: white !important;
+  fill: white !important;
 }
 .title {
- position: relative;
- margin: 30px 0 19px 30px;
- &:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -20px;
-  width: 6px;
-  height: 30px;
-  background-color: #e92f2f;
- }
+  position: relative;
+  margin: 30px 0 19px 30px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    width: 6px;
+    height: 30px;
+    background-color: #e92f2f;
+  }
 }
 .break {
- display: block;
- visibility: hidden;
- width: 100%;
- height: 150px;
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  height: 150px;
 }
-main {
- padding-bottom: 50px;
- background-color: $primary-color !important;
- color: $primary-text-color;
+hr.line-bar {
+  width: 120px;
+  height: 1px;
+  background-color: #fea75e;
+  border: none;
+  margin: 0;
+  opacity: 1;
 }
 
 /*** Navbar ***/
 .navbar {
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- z-index: 1000;
- background-color: rgba($primary-color, 0.7);
- color: $primary-text-color;
- backdrop-filter: blur(10px);
- padding: 20px 0;
- border-bottom: 1px solid rgba($primary-text-color, 0.1);
-
- .navbar-brand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba($primary-color, 0.7);
   color: $primary-text-color;
-  font-weight: 500;
- }
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba($primary-text-color, 0.1);
+  .navbar-brand {
+    color: $primary-text-color;
+    font-weight: 500;
+    img {
+      max-height: 50px;
+    }
+  }
 }
 
 main {
- position: relative;
- background-image: url("../images/interface/herobanner.jpg");
- width: 100%;
- height: 100vh;
- & > div {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba($primary-color, 0.1);
-  & > div {
-   width: 100%;
-   height: 100vh;
-   background: linear-gradient(
-    100deg,
-    $primary-color 25%,
-    rgba($primary-color, 0.9) 35%,
-    rgba($primary-color, 0.7) 45%,
-    rgba($primary-color, 0.5) 70%,
-    rgba($primary-color, 0.1) 90%,
-    rgba($primary-color, 0.1) 100%
-   );
-   & > div {
+  /*** Hero Section ***/
+  .hero-section {
+    position: relative;
+    background-image: url("../images/interface/construction-home-scaled.jpg");
+    background-position: center;
     width: 100%;
-    .row {
-     width: 100%;
-     height: 100vh;
-     h1 {
-      font-size: 3.9rem;
-      font-weight: 500;
-      line-height: 4.56rem;
-      margin: 20px 0;
-      margin-top: 32px;
-     }
-     p {
-      max-width: 600px;
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 1.8rem;
-      margin: 0;
-      color: darken($primary-text-color, 25%);
-     }
-     button {
-      width: fit-content !important;
-      padding: 10px 25px !important;
-      font-size: 0.9rem !important;
-      margin-top: 40px;
-     }
-     .chip {
-      background-color: rgba($primary-color, 0.7);
-      color: $primary-text-color;
-      border: 1px solid rgba($primary-text-color, 0.7);
-      padding: 10px 20px;
-      width: fit-content;
-      border-radius: 2px;
-      font-size: 0.9rem;
-      &:hover {
-       background-color: rgba($primary-color, 0.9);
+    min-height: 100vh;
+    .hero-layout {
+      width: 100%;
+      min-height: 100vh;
+      padding: 10rem 0;
+      background: linear-gradient(
+        100deg,
+        $primary-color 25%,
+        rgba($primary-color, 0.9) 35%,
+        rgba($primary-color, 0.7) 45%,
+        rgba($primary-color, 0.5) 70%,
+        rgba($primary-color, 0.1) 90%,
+        rgba($primary-color, 0.1) 100%
+      );
+      .container {
+        width: 100%;
+        .row {
+          width: 100%;
+          .hero-heading {
+            font-size: 3.8rem;
+            font-weight: 500;
+            line-height: 4.56rem;
+            margin: 20px 0;
+            margin-top: 32px;
+          }
+          .hero-paragraph {
+            max-width: 600px;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.8rem;
+            margin: 0;
+            color: darken($primary-text-color, 25%);
+          }
+          .hero-button {
+            width: fit-content !important;
+            padding: 10px 25px !important;
+            font-size: 0.9rem !important;
+            margin-top: 30px;
+          }
+          .hero-chip {
+            background-color: rgba($primary-color, 0.5);
+            color: $primary-text-color;
+            border: 1px solid rgba($primary-text-color, 0.4);
+            padding: 10px 20px;
+            width: fit-content;
+            border-radius: 2px;
+            font-size: 0.9rem;
+            &:hover {
+              background-color: rgba($primary-color, 0.9);
+            }
+          }
+        }
       }
-     }
     }
-   }
   }
- }
+  /*** Intro Section ***/
+  .intro-section {
+    padding: 100px 0;
+    .container {
+      .row {
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .intro-heading {
+          font-size: 2.6rem;
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+        .line-bar {
+          margin-bottom: 30px;
+        }
+        .intro-paragraph {
+          font-size: 0.9rem;
+          font-weight: 400;
+          line-height: 1.8rem;
+          margin: 0;
+          color: darken($primary-text-color, 25%);
+        }
+        .intro-button {
+          width: fit-content !important;
+          padding: 10px 25px !important;
+          font-size: 0.9rem !important;
+          margin-top: 30px;
+          background-color: rgba($third-color, 0.1);
+          border-radius: 0;
+        }
+        img {
+          width: 100%;
+          background-color: rgba($third-color, 0.1);
+          border-radius: 10px;
+          &:hover {
+            opacity: 0.75;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+  /*** Services Section ***/
+  .services-section {
+    padding: 50px 0;
+    .container {
+      .row {
+        .services-chip {
+          text-align: center;
+          color: rgba($primary-text-color, 0.7);
+        }
+        .services-heading {
+          font-size: 2.6rem;
+          font-weight: 600;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .line-bar {
+          margin: 0 auto 30px auto;
+        }
+        .service-card {
+          background-color: rgba($primary-color, 0.3);
+          color: $primary-text-color;
+          border: 1px solid rgba($primary-text-color, 0.2);
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: rgba($primary-color, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          }
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+            margin: 0;
+            color: darken($primary-text-color, 25%);
+          }
+        }
+      }
+    }
+  }
 }
