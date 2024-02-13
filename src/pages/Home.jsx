@@ -36,7 +36,9 @@ function Home() {
             <div className="container">
               <div className="row">
                 <div className="col-12 col-lg-8 d-flex flex-column h-100vh justify-content-center">
-                  <div className="hero-chip">Government Approved C.R. 1010630351</div>
+                  <div className="hero-chip">
+                    Government Approved C.R. 1010630351
+                  </div>
                   <h1 className="hero-heading">
                     We are Al-Muqayseh Gen Cont Est.
                   </h1>
@@ -162,6 +164,112 @@ function Home() {
                     />
                   </Link>
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*-- __CLIENTS__ --*/}
+        <div className="clients-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <p className="clients-chip">We turn ideas into works of art</p>
+                <h2 className="clients-heading">Our Clients</h2>
+                <hr className="line-bar" />
+                <p className="clients-paragraph">
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring.
+                </p>
+                <Link to="/clients">
+                  <button className="clients-button btn btn-primary">
+                    See More
+                  </button>
+                </Link>
+              </div>
+              <div className="col-12 col-md-6">
+                <div className="row row-gap-3">
+                  <div className="col-6 col-lg-3">
+                    <div className="client-card">
+                      <img src="/images/icons/cpp.jpg" alt="Client" />
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-3">
+                    <div className="client-card">
+                      <img src="/images/icons/daelim.png" alt="Client" />
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-3">
+                    <div className="client-card">
+                      <img src="/images/icons/marafiq.jpg" alt="Client" />
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-3">
+                    <div className="client-card">
+                      <img src="/images/icons/SABIC.png" alt="Client" />
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-3">
+                    <div className="client-card">
+                      <img src="/images/icons/sipchem.gif" alt="Client" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*-- __TEAM__ --*/}
+        <div className="team-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p className="team-chip">We are a team of professionals</p>
+                <h2 className="team-heading">Our Team</h2>
+                <hr className="line-bar" />
+                <br />
+              </div>
+              <div className="col-12">
+                <div className="row row-gap-4">
+                  <div className="col-6 col-lg-4">
+                    <div className="team-card">
+                      <img src="/images/persons/1.jpeg" alt="Team Member" />
+                      <h3 className="team-name">
+                        Aujan Bin Obaid Bin Abu Thaneen
+                      </h3>
+                      <p className="team-title">Managing Director</p>
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-4">
+                    <div className="team-card">
+                      <img src="/images/persons/2.jpeg" alt="Team Member" />
+                      <h3 className="team-name">Parvez Shahidullah</h3>
+                      <p className="team-title">Marketing Specialist</p>
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-4">
+                    <div className="team-card">
+                      <img src="/images/persons/3.jpg" alt="Team Member" />
+                      <h3 className="team-name">Mohammad Shahjahan Chanchal</h3>
+                      <p className="team-title">Planning Operating Manager</p>
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-4">
+                    <div className="team-card">
+                      <img src="/images/persons/4.jpg" alt="Team Member" />
+                      <h3 className="team-name">Mohammad Sohel</h3>
+                      <p className="team-title">Marketing Manager</p>
+                    </div>
+                  </div>
+                  <div className="col-6 col-lg-4">
+                    <div className="team-card">
+                      <img src="/images/persons/5.jpg" alt="Team Member" style={{
+                        objectPosition: "top"
+                      }} />
+                      <h3 className="team-name">Mahdi Hasan Shihab</h3>
+                      <p className="team-title">Operations Manager</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -151,38 +151,40 @@ hr.line-bar {
     width: 100%;
   }
 }
-main {
+.__home-page {
   /*** Hero Section ***/
   /*** Intro Section ***/
   /*** Services Section ***/
+  /*** Clients Section ***/
+  /*** Team Section ***/
 }
-main .hero-section {
+.__home-page .hero-section {
   position: relative;
   background-image: url("../images/interface/construction-home-scaled.jpg");
   background-position: center;
   width: 100%;
   min-height: 100vh;
 }
-main .hero-section .hero-layout {
+.__home-page .hero-section .hero-layout {
   width: 100%;
   min-height: 100vh;
   padding: 10rem 0;
   background: linear-gradient(100deg, #18191a 25%, rgba(24, 25, 26, 0.9) 35%, rgba(24, 25, 26, 0.7) 45%, rgba(24, 25, 26, 0.5) 70%, rgba(24, 25, 26, 0.1) 90%, rgba(24, 25, 26, 0.1) 100%);
 }
-main .hero-section .hero-layout .container {
+.__home-page .hero-section .hero-layout .container {
   width: 100%;
 }
-main .hero-section .hero-layout .container .row {
+.__home-page .hero-section .hero-layout .container .row {
   width: 100%;
 }
-main .hero-section .hero-layout .container .row .hero-heading {
+.__home-page .hero-section .hero-layout .container .row .hero-heading {
   font-size: 3.8rem;
   font-weight: 500;
   line-height: 4.56rem;
   margin: 20px 0;
   margin-top: 32px;
 }
-main .hero-section .hero-layout .container .row .hero-paragraph {
+.__home-page .hero-section .hero-layout .container .row .hero-paragraph {
   max-width: 600px;
   font-size: 1rem;
   font-weight: 300;
@@ -190,14 +192,14 @@ main .hero-section .hero-layout .container .row .hero-paragraph {
   margin: 0;
   color: #bfbfbf;
 }
-main .hero-section .hero-layout .container .row .hero-button {
+.__home-page .hero-section .hero-layout .container .row .hero-button {
   width: -moz-fit-content !important;
   width: fit-content !important;
   padding: 10px 25px !important;
   font-size: 0.9rem !important;
   margin-top: 30px;
 }
-main .hero-section .hero-layout .container .row .hero-chip {
+.__home-page .hero-section .hero-layout .container .row .hero-chip {
   background-color: rgba(24, 25, 26, 0.5);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -207,33 +209,33 @@ main .hero-section .hero-layout .container .row .hero-chip {
   border-radius: 2px;
   font-size: 0.9rem;
 }
-main .hero-section .hero-layout .container .row .hero-chip:hover {
+.__home-page .hero-section .hero-layout .container .row .hero-chip:hover {
   background-color: rgba(24, 25, 26, 0.9);
 }
-main .intro-section {
+.__home-page .intro-section {
   padding: 100px 0;
 }
-main .intro-section .container .row > div {
+.__home-page .intro-section .container .row > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .intro-section .container .row .intro-heading {
+.__home-page .intro-section .container .row .intro-heading {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
-main .intro-section .container .row .line-bar {
+.__home-page .intro-section .container .row .line-bar {
   margin-bottom: 30px;
 }
-main .intro-section .container .row .intro-paragraph {
+.__home-page .intro-section .container .row .intro-paragraph {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.8rem;
   margin: 0;
   color: #bfbfbf;
 }
-main .intro-section .container .row .intro-button {
+.__home-page .intro-section .container .row .intro-button {
   width: -moz-fit-content !important;
   width: fit-content !important;
   padding: 10px 25px !important;
@@ -242,36 +244,36 @@ main .intro-section .container .row .intro-button {
   background-color: transparent;
   border-radius: 0;
 }
-main .intro-section .container .row .intro-button:hover {
+.__home-page .intro-section .container .row .intro-button:hover {
   background-color: rgba(0, 127, 255, 0.6);
 }
-main .intro-section .container .row img {
+.__home-page .intro-section .container .row img {
   width: 100%;
   background-color: rgba(0, 127, 255, 0.1);
   border-radius: 10px;
 }
-main .intro-section .container .row img:hover {
+.__home-page .intro-section .container .row img:hover {
   opacity: 0.75;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
-main .services-section {
+.__home-page .services-section {
   padding: 50px 0;
 }
-main .services-section .container .row .services-chip {
+.__home-page .services-section .container .row .services-chip {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
-main .services-section .container .row .services-heading {
+.__home-page .services-section .container .row .services-heading {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
 }
-main .services-section .container .row .line-bar {
+.__home-page .services-section .container .row .line-bar {
   margin: 0 auto 30px auto;
 }
-main .services-section .container .row .service-card {
+.__home-page .services-section .container .row .service-card {
   height: 100%;
   background-color: rgba(24, 25, 26, 0.3);
   color: #fff;
@@ -282,22 +284,22 @@ main .services-section .container .row .service-card {
   transition: all 0.3s ease;
   text-align: center;
 }
-main .services-section .container .row .service-card:hover {
+.__home-page .services-section .container .row .service-card:hover {
   background-color: rgba(24, 25, 26, 0.9);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
-main .services-section .container .row .service-card svg {
+.__home-page .services-section .container .row .service-card svg {
   width: 50px;
   height: 50px;
   fill: #fea75e;
 }
-main .services-section .container .row .service-card h3 {
+.__home-page .services-section .container .row .service-card h3 {
   font-size: 1.6rem;
   font-weight: 500;
   margin: 10px 0;
 }
-main .services-section .container .row .service-card p {
+.__home-page .services-section .container .row .service-card p {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -305,12 +307,168 @@ main .services-section .container .row .service-card p {
   margin-top: 20px;
   color: #bfbfbf;
 }
-main .services-section .container .row button {
+.__home-page .services-section .container .row button {
   transition: all 0.3s ease;
 }
-main .services-section .container .row button:hover {
+.__home-page .services-section .container .row button:hover {
   opacity: 0.75;
 }
-main .services-section .container .row button:hover svg {
+.__home-page .services-section .container .row button:hover svg {
   margin-left: 10px;
+}
+.__home-page .clients-section {
+  padding: 100px 0;
+  background-color: #27282a;
+}
+.__home-page .clients-section .container .row .clients-chip {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+.__home-page .clients-section .container .row .clients-heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.__home-page .clients-section .container .row .clients-paragraph {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 0;
+}
+.__home-page .clients-section .container .row .line-bar {
+  margin: 0 0 30px 0;
+}
+.__home-page .clients-section .container .row .clients-button {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 10px 25px !important;
+  font-size: 0.9rem !important;
+  margin-top: 30px;
+  background-color: transparent;
+  border-radius: 0;
+}
+.__home-page .clients-section .container .row .clients-button:hover {
+  background-color: rgba(0, 127, 255, 0.6);
+}
+.__home-page .clients-section .container .row .client-card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.__home-page .clients-section .container .row .client-card:hover {
+  opacity: 0.75;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.__home-page .clients-section .container .row .client-card img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.__home-page .team-section {
+  padding: 100px 0;
+}
+.__home-page .team-section .container .row .team-chip {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+.__home-page .team-section .container .row .team-heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.__home-page .team-section .container .row .line-bar {
+  margin: 0 0 30px 0;
+}
+.__home-page .team-section .container .row .team-card {
+  height: 100%;
+  text-align: center;
+  background-color: rgba(24, 25, 26, 0.3);
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.__home-page .team-section .container .row .team-card:hover {
+  background-color: rgba(24, 25, 26, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.__home-page .team-section .container .row .team-card img {
+  width: 100%;
+  display: flex;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.3rem 0.3rem 0 0;
+  margin-bottom: 20px;
+}
+.__home-page .team-section .container .row .team-card h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 30px 0 4px 0;
+}
+.__home-page .team-section .container .row .team-card p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0 0 30px 0;
+  color: #bfbfbf;
+}
+
+.__clients-page {
+  /*** Hero Section ***/
+  /*** Clients Section ***/
+}
+.__clients-page .hero-section {
+  position: relative;
+  background-image: url("../images/interface/sketch-new-construction-scaled.jpg");
+  background-position: center;
+  width: 100%;
+  padding: 3rem 0;
+  padding-top: 8rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.__clients-page .clients-section {
+  padding: 50px 0;
+}
+.__clients-page .clients-section .main {
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+.__clients-page .clients-section .main .wrapper {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem;
+  gap: 40px;
+}
+.__clients-page .clients-section .main .wrapper.opposite .item {
+  animation: animate 25s alternate-reverse linear infinite;
+}
+.__clients-page .clients-section .main .wrapper .item {
+  margin: 0 10px;
+  animation: animate 25s alternate linear infinite;
+}
+.__clients-page .clients-section .main .wrapper .item img {
+  height: 55px;
+  border-radius: 0.5rem;
+}
+@keyframes animate {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-1100px, 0, 0);
+  }
 }

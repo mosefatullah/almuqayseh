@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 // Assets
-import Logo from "../../assets/Al-Muqayseh.png";
+import Logo from "../../assets/logo.gif";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 function Navbar() {
