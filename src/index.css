@@ -40,6 +40,10 @@ mark {
 button {
   text-transform: uppercase;
 }
+button a {
+  color: #fff;
+  text-decoration: none;
+}
 
 h1,
 h2,
@@ -65,7 +69,7 @@ h6 {
   left: -20px;
   width: 6px;
   height: 30px;
-  background-color: #e92f2f;
+  background-color: #fea75e;
 }
 
 .break {
@@ -100,11 +104,53 @@ hr.line-bar {
 .navbar .navbar-brand {
   color: #fff;
   font-weight: 500;
+  display: flex;
+  gap: 10px;
 }
 .navbar .navbar-brand img {
-  max-height: 50px;
+  max-height: 55px;
+  border-radius: 5px;
+}
+.navbar .navbar-brand .logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar .navbar-brand .logo h3,
+.navbar .navbar-brand .logo p {
+  margin: 0;
+  font-weight: 400;
+}
+.navbar .navbar-brand .logo h3 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.navbar .navbar-brand .logo p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.navbar .navbar-items {
+  display: flex;
+  height: 100%;
+  gap: 30px;
+  align-items: center;
+}
+.navbar .navbar-items .contact-info {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.navbar .navbar-items .contact-info span {
+  color: #fea75e;
+}
+.navbar .navbar-items .menu-action {
+  margin-left: auto;
 }
 
+@media (max-width: 768px) {
+  .navbar .navbar-items {
+    width: 100%;
+  }
+}
 main {
   /*** Hero Section ***/
   /*** Intro Section ***/
@@ -193,8 +239,11 @@ main .intro-section .container .row .intro-button {
   padding: 10px 25px !important;
   font-size: 0.9rem !important;
   margin-top: 30px;
-  background-color: rgba(0, 127, 255, 0.1);
+  background-color: transparent;
   border-radius: 0;
+}
+main .intro-section .container .row .intro-button:hover {
+  background-color: rgba(0, 127, 255, 0.6);
 }
 main .intro-section .container .row img {
   width: 100%;
@@ -204,6 +253,7 @@ main .intro-section .container .row img {
 main .intro-section .container .row img:hover {
   opacity: 0.75;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
 }
 main .services-section {
   padding: 50px 0;
@@ -222,27 +272,45 @@ main .services-section .container .row .line-bar {
   margin: 0 auto 30px auto;
 }
 main .services-section .container .row .service-card {
+  height: 100%;
   background-color: rgba(24, 25, 26, 0.3);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  padding: 35px 20px;
   border-radius: 10px;
   margin-bottom: 30px;
   transition: all 0.3s ease;
+  text-align: center;
 }
 main .services-section .container .row .service-card:hover {
   background-color: rgba(24, 25, 26, 0.9);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+main .services-section .container .row .service-card svg {
+  width: 50px;
+  height: 50px;
+  fill: #fea75e;
 }
 main .services-section .container .row .service-card h3 {
   font-size: 1.6rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 main .services-section .container .row .service-card p {
   font-size: 0.9rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
   margin: 0;
+  margin-top: 20px;
   color: #bfbfbf;
+}
+main .services-section .container .row button {
+  transition: all 0.3s ease;
+}
+main .services-section .container .row button:hover {
+  opacity: 0.75;
+}
+main .services-section .container .row button:hover svg {
+  margin-left: 10px;
 }
