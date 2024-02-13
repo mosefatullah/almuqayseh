@@ -17,6 +17,10 @@ import TagIcon from "@mui/icons-material/Tag";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
+import CallRoundedIcon from "@mui/icons-material/CallRounded";
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
+
 function Home() {
   return (
     <div className="Home">
@@ -47,8 +51,8 @@ function Home() {
                     your business. We have a wide range of workers to choose
                     from. We are dedicated.
                   </p>
-                  <button className="hero-button btn btn-primary">
-                    <Link to="/contact">Consult Now</Link>
+                  <button className="btn btn-primary hero-button">
+                    <Link to="/contact-us">Consult Now</Link>
                   </button>
                 </div>
               </div>
@@ -80,7 +84,7 @@ function Home() {
                   operation.
                 </p>
                 <button className="intro-button btn btn-primary">
-                  <Link to="/about">Read More</Link>
+                  <Link to="/about-us">Read More</Link>
                 </button>
               </div>
               <div className="col-12 col-lg-6">
@@ -171,7 +175,7 @@ function Home() {
         {/*-- __CLIENTS__ --*/}
         <div className="clients-section">
           <div className="container">
-            <div className="row">
+            <div className="row row-gap-5">
               <div className="col-12 col-md-6">
                 <p className="clients-chip">We turn ideas into works of art</p>
                 <h2 className="clients-heading">Our Clients</h2>
@@ -262,9 +266,7 @@ function Home() {
                   </div>
                   <div className="col-6 col-lg-4">
                     <div className="team-card">
-                      <img src="/images/persons/5.jpg" alt="Team Member" style={{
-                        objectPosition: "top"
-                      }} />
+                      <img src="/images/persons/5.jpg" alt="Team Member" />
                       <h3 className="team-name">Mahdi Hasan Shihab</h3>
                       <p className="team-title">Operations Manager</p>
                     </div>
@@ -274,9 +276,57 @@ function Home() {
             </div>
           </div>
         </div>
+        {/*-- __CONTACT__ --*/}
+        <div className="contact-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p className="contact-chip">CONTACT US</p>
+                <h2 className="contact-heading">Get in touch</h2>
+                <hr className="line-bar" />
+              </div>
+              <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                <p className="contact-info">
+                  <CallRoundedIcon sx={{ fontSize: 20 }} />
+                  Phone: <br />
+                  <span>+966 55160 6778, +880 1322660800</span>
+                </p>
+                <p className="contact-info">
+                  <CallRoundedIcon sx={{ fontSize: 20 }} />
+                  Tel: <br />
+                  <span>011 2442233</span>
+                </p>
+                <p className="contact-info">
+                  <EmailRoundedIcon sx={{ fontSize: 20 }} />
+                  Email: <br />
+                  <span>parvez.sahidullah@gmail.com</span>
+                </p>
+                <p className="contact-info">
+                  <LocationOnRoundedIcon sx={{ fontSize: 20 }} />
+                  Address: <br />
+                  <span>
+                    Riyadh 6181 Abi Al Ala Al Maari, Az Zahra, Riyadh, Saudi
+                    Arabia
+                  </span>
+                </p>
+              </div>
+              <div className="col-12 col-lg-6">
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=6181 Abi Al Ala Al Maari, 2952, Az Zahra, Riyadh 12812, Saudi Arabia"
+                  width="600"
+                  height="378"
+                  frameBorder="0"
+                  style={{ width: "100%" }}
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       {/*-- __FOOTER__ --*/}
+      <Footer />
     </div>
   );
 }

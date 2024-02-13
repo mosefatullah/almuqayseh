@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400&display=swap");
-$primary-color: #18191a;
-$primary-text-color: #fff;
+$primary-color: #fff;
+$primary-text-color: #2b2c2e;
 $primary-font: "Poppins", sans-serif;
 $secondary-color: #242526;
 $third-color: #007fff;
-$orange-color: #fea75e;
+$orange-color: #fd9037;
 
 @mixin image-center($url) {
   background-image: url(unquote($url));
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
   font-family: $primary-font;
 }
 body {
-  background-color: $secondary-color !important;
+  background-color: $primary-color !important;
   color: $primary-text-color;
 }
 
@@ -96,7 +96,7 @@ hr.line-bar {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba($primary-color, 0.7);
+  background-color: rgba($primary-color, 0.8);
   color: $primary-text-color;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba($primary-text-color, 0.1);
@@ -199,6 +199,9 @@ hr.line-bar {
             padding: 10px 25px !important;
             font-size: 0.9rem !important;
             margin-top: 30px;
+            a {
+              color: $primary-color !important;
+            }
           }
           .hero-chip {
             background-color: rgba($primary-color, 0.5);
@@ -219,6 +222,7 @@ hr.line-bar {
   /*** Intro Section ***/
   .intro-section {
     padding: 100px 0;
+    background-color: darken($primary-color, 3%);
     .container {
       .row {
         & > div {
@@ -248,8 +252,15 @@ hr.line-bar {
           margin-top: 30px;
           background-color: transparent;
           border-radius: 0;
+          a {
+            color: $primary-text-color !important;
+          }
           &:hover {
-            background-color: rgba($third-color, 0.6);
+            background-color: $third-color;
+            border-color: transparent;
+            a {
+              color: $primary-color !important;
+            }
           }
         }
         img {
@@ -318,6 +329,7 @@ hr.line-bar {
           }
         }
         button {
+          color: $primary-text-color !important;
           transition: all 0.3s ease;
           &:hover {
             opacity: 0.75;
@@ -332,7 +344,7 @@ hr.line-bar {
   /*** Clients Section ***/
   .clients-section {
     padding: 100px 0;
-    background-color: lighten($primary-color, 6%);
+    background-color: darken($primary-color, 3%);
     .container {
       .row {
         .clients-chip {
@@ -360,8 +372,11 @@ hr.line-bar {
           margin-top: 30px;
           background-color: transparent;
           border-radius: 0;
+          color: $primary-text-color !important;
           &:hover {
-            background-color: rgba($third-color, 0.6);
+            background-color: $third-color;
+            border-color: transparent;
+            color: $primary-color !important;
           }
         }
         .client-card {
@@ -408,7 +423,7 @@ hr.line-bar {
         .team-card {
           height: 100%;
           text-align: center;
-          background-color: rgba($primary-color, 0.3);
+          background-color: #f5f5f5;
           color: $primary-text-color;
           border: 1px dashed rgba($primary-text-color, 0.2);
           border-radius: 10px;
@@ -426,6 +441,7 @@ hr.line-bar {
             object-fit: cover;
             border-radius: 0.3rem 0.3rem 0 0;
             margin-bottom: 20px;
+            object-position: top;
           }
           h3 {
             text-align: center;
@@ -444,6 +460,86 @@ hr.line-bar {
       }
     }
   }
+  /*** Contact Section ***/
+  .contact-section {
+    padding: 100px 0;
+    background-color: darken($primary-color, 3%);
+    .container {
+      .row {
+        .contact-info {
+          font-weight: 600;
+          span {
+            font-weight: 400;
+            margin-left: 38px;
+          }
+          svg {
+            width: 28px;
+            height: 28px;
+            fill: $orange-color;
+            margin-right: 10px;
+          }
+        }
+        .contact-chip {
+          color: rgba($primary-text-color, 0.7);
+          font-size: 0.9rem;
+        }
+        .contact-heading {
+          font-size: 2.6rem;
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+        .line-bar {
+          margin: 0 0 30px 0;
+        }
+        .contact-form {
+          background-color: rgba($primary-color, 0.3);
+          color: $primary-text-color;
+          border: 1px dashed rgba($primary-text-color, 0.2);
+          padding: 35px 20px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          transition: all 0.3s ease;
+          text-align: center;
+          &:hover {
+            background-color: rgba($primary-color, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+          }
+          h3 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 10px 0;
+          }
+          p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            margin: 0;
+            margin-top: 20px;
+            color: darken($primary-text-color, 25%);
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input,
+            textarea {
+              width: 100%;
+              padding: 10px 15px;
+              border: 1px solid rgba($primary-text-color, 0.2);
+              border-radius: 5px;
+              background-color: rgba($primary-text-color, 0.1);
+              color: $primary-text-color;
+              transition: all 0.3s ease;
+              &:focus {
+                border-color: $third-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .__clients-page {
@@ -456,13 +552,17 @@ hr.line-bar {
     padding: 3rem 0;
     padding-top: 8rem;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: $primary-color;
+    a,
+    span {
+      color: $primary-color;
+    }
   }
   /*** Clients Section ***/
   .clients-section {
     padding: 50px 0;
     .main {
       border-radius: 0.2rem;
-      background-color: #fff;
       .wrapper {
         display: flex;
         width: 100%;

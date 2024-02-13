@@ -24,7 +24,7 @@ function Clients() {
         <section className="hero-section">
           <div className="container">
             <h1>Our Clients</h1>
-            <button className="btn text-white p-0 mt-2">
+            <button className="btn p-0 mt-2">
               <Link
                 to="/"
                 style={{
