@@ -230,6 +230,9 @@ hr.line-bar {
   margin: 20px 0;
   margin-top: 32px;
 }
+.__home-page .hero-section .hero-layout .container .row .hero-heading span {
+  color: #bfbfbf;
+}
 .__home-page .hero-section .hero-layout .container .row .hero-paragraph {
   max-width: 600px;
   font-size: 1rem;
@@ -303,6 +306,9 @@ hr.line-bar {
   font-weight: 600;
   margin-bottom: 30px;
 }
+.__home-page .intro-section .container .row .intro-heading span {
+  color: #bfbfbf;
+}
 .__home-page .intro-section .container .row .line-bar {
   margin-bottom: 30px;
 }
@@ -352,6 +358,9 @@ hr.line-bar {
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
+}
+.__home-page .services-section .container .row .services-heading span {
+  color: #bfbfbf;
 }
 .__home-page .services-section .container .row .line-bar {
   margin: 0 auto 30px auto;
@@ -416,6 +425,9 @@ hr.line-bar {
   font-weight: 600;
   margin-bottom: 30px;
 }
+.__home-page .job-section .container .row .job-heading span {
+  color: #bfbfbf;
+}
 .__home-page .job-section .container .row .line-bar {
   margin: 0 0 30px 0;
 }
@@ -461,6 +473,9 @@ hr.line-bar {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
+}
+.__home-page .clients-section .container .row .clients-heading span {
+  color: #bfbfbf;
 }
 .__home-page .clients-section .container .row .line-bar {
   margin: 0 0 30px 0;
@@ -519,6 +534,9 @@ hr.line-bar {
   font-weight: 600;
   margin-bottom: 30px;
 }
+.__home-page .team-section .container .row .intro .team-heading span {
+  color: #bfbfbf;
+}
 .__home-page .team-section .container .row .intro .line-bar {
   margin: 0 0 30px 0;
 }
@@ -569,6 +587,7 @@ hr.line-bar {
 .__home-page .contact-section .container .row .contact-info span {
   font-weight: 400;
   margin-left: 38px;
+  color: #bfbfbf;
 }
 .__home-page .contact-section .container .row .contact-info svg {
   width: 28px;
@@ -584,6 +603,9 @@ hr.line-bar {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
+}
+.__home-page .contact-section .container .row .contact-heading span {
+  color: #bfbfbf;
 }
 .__home-page .contact-section .container .row .line-bar {
   margin: 0 0 30px 0;

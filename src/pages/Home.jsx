@@ -41,7 +41,9 @@ function Home() {
        <div className="row">
         <div className="col-12 col-lg-7 d-flex flex-column h-100vh justify-content-center">
          <div className="hero-chip">Government Approved C.R. 1010630351</div>
-         <h1 className="hero-heading">We are Al-Muqayseh Gen Cont Est.</h1>
+         <h1 className="hero-heading">
+          We are <span>Al-Muqayseh</span> Gen Cont Est.
+         </h1>
          <p className="hero-paragraph">
           At Al-Muqayseh Gen Cont Est., we're driving Saudi Arabia's growth in
           Oil, Gas, Infrastructure, and Power. With a commitment to excellence
@@ -85,7 +87,7 @@ function Home() {
          />
         </span>
         <h2 className="intro-heading animation">
-         We turn your ideas into reality
+         We <span>turn your</span> ideas <span>into reality</span>
         </h2>
         <hr className="line-bar animation" />
         <p className="intro-paragraph animation">
@@ -128,7 +130,7 @@ function Home() {
            mr: "10px",
           }}
          />
-         Our Services
+         Our <span>Services</span>
         </h2>
         <hr className="line-bar" />
        </div>
@@ -197,7 +199,9 @@ function Home() {
       <div className="row row-gap-5">
        <div className="col-12 col-lg-6 animation">
         <p className="job-chip">Tailored Job Categories</p>
-        <h2 className="job-heading">Job Opportunities</h2>
+        <h2 className="job-heading">
+         Job <span>Opportunities</span>
+        </h2>
         <hr className="line-bar" />
         <p className="job-paragraph">
          Calling all individuals, especially those in Bangladesh, India, and
@@ -279,7 +283,9 @@ function Home() {
       <div className="row row-gap-5">
        <div className="col-12 col-md-6 animation">
         <p className="clients-chip">We turn ideas into works of art</p>
-        <h2 className="clients-heading">Our Clients</h2>
+        <h2 className="clients-heading">
+         Our <span>Clients</span>
+        </h2>
         <hr className="line-bar" />
         <Link to="/clients">
          <button className="clients-button btn btn-primary">See More</button>
@@ -331,7 +337,7 @@ function Home() {
            mr: "10px",
           }}
          />
-         Our Team
+         Our <span>Team</span>
         </h2>
         <hr className="line-bar" />
         <br />
@@ -384,7 +390,9 @@ function Home() {
       <div className="row row-gap-3">
        <div className="col-12 animation">
         <p className="contact-chip">CONTACT US</p>
-        <h2 className="contact-heading">Get in touch</h2>
+        <h2 className="contact-heading">
+         Get <span>in</span> touch
+        </h2>
         <hr className="line-bar" />
        </div>
        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center animation">

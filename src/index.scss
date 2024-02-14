@@ -232,6 +232,9 @@ hr.line-bar {
       line-height: 4.56rem;
       margin: 20px 0;
       margin-top: 32px;
+      span {
+       color: darken($primary-text-color, 25%);
+      }
      }
      .hero-paragraph {
       max-width: 600px;
@@ -309,6 +312,9 @@ hr.line-bar {
      font-size: 2.6rem;
      font-weight: 600;
      margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
     }
     .line-bar {
      margin-bottom: 30px;
@@ -364,6 +370,9 @@ hr.line-bar {
      font-weight: 600;
      margin-bottom: 30px;
      text-align: center;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
     }
     .line-bar {
      margin: 0 auto 30px auto;
@@ -432,6 +441,9 @@ hr.line-bar {
      font-size: 2.6rem;
      font-weight: 600;
      margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
     }
     .line-bar {
      margin: 0 0 30px 0;
@@ -483,6 +495,9 @@ hr.line-bar {
      font-size: 2.6rem;
      font-weight: 600;
      margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
     }
     .line-bar {
      margin: 0 0 30px 0;
@@ -544,6 +559,9 @@ hr.line-bar {
       font-size: 2.6rem;
       font-weight: 600;
       margin-bottom: 30px;
+      span {
+       color: darken($primary-text-color, 25%);
+      }
      }
      .line-bar {
       margin: 0 0 30px 0;
@@ -600,6 +618,7 @@ hr.line-bar {
      span {
       font-weight: 400;
       margin-left: 38px;
+      color: darken($primary-text-color, 25%);
      }
      svg {
       width: 28px;
@@ -616,6 +635,9 @@ hr.line-bar {
      font-size: 2.6rem;
      font-weight: 600;
      margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
     }
     .line-bar {
      margin: 0 0 30px 0;
