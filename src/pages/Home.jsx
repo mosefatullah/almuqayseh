@@ -232,7 +232,7 @@ function Home() {
         <div className="team-section">
           <div className="container">
             <div className="row">
-              <div className="col-12 animation">
+              <div className="intro col-12 animation">
                 <p className="team-chip">We are a team of professionals</p>
                 <h2 className="team-heading">Our Team</h2>
                 <hr className="line-bar" />

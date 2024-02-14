@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 // Assets
-import Logo from "../../assets/logo.gif";
+import Logo from "../../assets/logo.jpg";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 function Navbar() {
