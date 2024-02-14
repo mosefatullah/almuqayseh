@@ -59,6 +59,20 @@ function Home() {
     {/*-- __INTRO__ --*/}
     <div className="intro-section">
      <div className="container">
+      <div className="counter">
+       <div className="counter-item">
+        <h3>10+</h3>
+        <p>Years of Experience</p>
+       </div>
+       <div className="counter-item">
+        <h3>500+</h3>
+        <p>Projects Completed</p>
+       </div>
+       <div className="counter-item">
+        <h3>80k+</h3>
+        <p>Workers Supplied</p>
+       </div>
+      </div>
       <div className="row row-gap-5">
        <div className="col-12 col-lg-6">
         <span className="intro-chip animation">
