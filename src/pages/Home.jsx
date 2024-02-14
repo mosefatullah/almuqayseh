@@ -337,35 +337,35 @@ function Home() {
        </div>
        <div className="col-12">
         <div className="row row-gap-4">
-         <div className="col-6 col-lg-4">
+         <div className="col-6 col-lg-4 col-xxl-3">
           <div className="team-card animation">
            <img src="/images/persons/1.jpeg" alt="Team Member" />
            <h3 className="team-name">Aujan Bin Obaid Bin Abu Thaneen</h3>
            <p className="team-title">Managing Director</p>
           </div>
          </div>
-         <div className="col-6 col-lg-4">
+         <div className="col-6 col-lg-4 col-xxl-3">
           <div className="team-card animation">
            <img src="/images/persons/2.jpeg" alt="Team Member" />
            <h3 className="team-name">Parvez Shahidullah</h3>
            <p className="team-title">Marketing Specialist</p>
           </div>
          </div>
-         <div className="col-6 col-lg-4">
+         <div className="col-6 col-lg-4 col-xxl-3">
           <div className="team-card animation">
            <img src="/images/persons/3.jpg" alt="Team Member" />
            <h3 className="team-name">Mohammad Shahjahan Chanchal</h3>
            <p className="team-title">Planning Operating Manager</p>
           </div>
          </div>
-         <div className="col-6 col-lg-4">
+         <div className="col-6 col-lg-4 col-xxl-3">
           <div className="team-card animation">
            <img src="/images/persons/4.jpg" alt="Team Member" />
            <h3 className="team-name">Mohammad Sohel</h3>
            <p className="team-title">Marketing Manager</p>
           </div>
          </div>
-         <div className="col-6 col-lg-4">
+         <div className="col-6 col-lg-4 col-xxl-3">
           <div className="team-card animation">
            <img src="/images/persons/5.jpg" alt="Team Member" />
            <h3 className="team-name">Mahdi Hasan Shihab</h3>
