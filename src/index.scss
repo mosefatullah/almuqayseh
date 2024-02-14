@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400&display=swap");
 $primary-color: #fff;
 $primary-text-color: #2b2c2e;
-$primary-font: "Poppins", sans-serif;
+$primary-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $secondary-color: #242526;
 $third-color: #007fff;
 $orange-color: #fd9037;
@@ -88,6 +89,22 @@ hr.line-bar {
   margin: 0;
   opacity: 1;
 }
+.__animation {
+  -webkit-transform: translateY(100px) scale(0.9);
+  transform: translateY(100px) scale(0.9);
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  opacity: 0.3;
+  transition: all 0.4s, opacity 1s;
+  &.active {
+    opacity: 1;
+    -webkit-transform: translateY(0px) scale(1);
+    transform: translateY(0px) scale(1);
+  }
+}
 
 /*** Navbar ***/
 .navbar {
@@ -96,10 +113,13 @@ hr.line-bar {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba($primary-color, 0.8);
+  background-color: #fff;
   color: $primary-text-color;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba($primary-text-color, 0.1);
+  &.menu-inactive {
+    background-color: rgba($primary-color, 0.8);
+  }
   .navbar-brand {
     color: $primary-text-color;
     font-weight: 500;
@@ -108,6 +128,7 @@ hr.line-bar {
     img {
       max-height: 55px;
       border-radius: 5px;
+      border: 1px solid rgba($primary-text-color, 0.1);
     }
     .logo {
       display: flex;
@@ -137,7 +158,11 @@ hr.line-bar {
       margin: 0;
       font-size: 0.9rem;
       span {
-        color: $orange-color;
+        color: $primary-color;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: $orange-color;
+        margin-left: 8px;
       }
     }
     .menu-action {
@@ -147,9 +172,9 @@ hr.line-bar {
   .navbar-menu {
     width: 100%;
     padding: 25px 0 35px 0;
-    margin-top: -500px;
-    &.active {
-      margin-top: 10px;
+    margin-top: 10px;
+    &.inactive {
+      margin-top: -500px;
     }
     ul {
       margin-bottom: 0;
@@ -185,15 +210,14 @@ hr.line-bar {
   left: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  display: block;
   background-color: rgba($primary-text-color, 0.5);
   backdrop-filter: blur(5px);
   z-index: 999;
-  &.active {
-    display: block;
+  &.inactive {
+    display: none;
   }
 }
-
 @media (max-width: 768px) {
   .navbar {
     .navbar-items {
@@ -202,6 +226,7 @@ hr.line-bar {
   }
 }
 
+/*** Home Page ***/
 .__home-page {
   /*** Hero Section ***/
   .hero-section {
@@ -240,12 +265,12 @@ hr.line-bar {
             font-weight: 300;
             line-height: 1.8rem;
             margin: 0;
-            color: darken($primary-text-color, 25%);
+            color: lighten($primary-text-color, 25%);
           }
           .hero-button {
             width: fit-content !important;
             padding: 10px 25px !important;
-            font-size: 0.9rem !important;
+            font-size: 1rem !important;
             margin-top: 30px;
             a {
               color: $primary-color !important;
@@ -254,7 +279,7 @@ hr.line-bar {
           .hero-chip {
             background-color: rgba($primary-color, 0.5);
             color: $primary-text-color;
-            border: 1px solid rgba($primary-text-color, 0.4);
+            border: 1px solid rgba($orange-color, 0.85);
             padding: 10px 20px;
             width: fit-content;
             border-radius: 2px;
@@ -291,14 +316,16 @@ hr.line-bar {
           font-weight: 400;
           line-height: 1.8rem;
           margin: 0;
-          color: darken($primary-text-color, 25%);
+          color: lighten($primary-text-color, 25%);
         }
         .intro-button {
           width: fit-content !important;
           padding: 10px 25px !important;
-          font-size: 0.9rem !important;
+          font-size: 1rem !important;
           margin-top: 30px;
           background-color: transparent;
+          border-width: 2px;
+          font-weight: 600;
           border-radius: 0;
           a {
             color: $primary-text-color !important;
@@ -408,6 +435,7 @@ hr.line-bar {
           font-size: 0.9rem;
           font-weight: 400;
           line-height: 1.8rem;
+          color: lighten($primary-text-color, 25%);
           margin: 0;
         }
         .line-bar {
@@ -416,9 +444,11 @@ hr.line-bar {
         .clients-button {
           width: fit-content !important;
           padding: 10px 25px !important;
-          font-size: 0.9rem !important;
+          font-size: 1rem !important;
           margin-top: 30px;
           background-color: transparent;
+          border-width: 2px;
+          font-weight: 600;
           border-radius: 0;
           color: $primary-text-color !important;
           &:hover {
@@ -590,6 +620,7 @@ hr.line-bar {
   }
 }
 
+/*** Clients Page ***/
 .__clients-page {
   /*** Hero Section ***/
   .hero-section {
@@ -635,6 +666,43 @@ hr.line-bar {
           }
           to {
             transform: translate3d(-1100px, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** Footer ***/
+.footer {
+  padding: 70px 0;
+  background-color: $primary-color;
+  color: $primary-text-color;
+  border-top: 1px solid rgba($primary-text-color, 0.1);
+  .container {
+    .row {
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      li {
+        margin: 3px 0;
+        span {
+          display: block;
+          padding-bottom: 10px;
+          font-weight: 300;
+          font-size: 0.9rem;
+          color: lighten($primary-text-color, 50%);
+        }
+        a {
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-weight: 500;
+          font-size: 1rem;
+          color: lighten($primary-text-color, 20%);
+          &:hover {
+            color: $orange-color;
           }
         }
       }

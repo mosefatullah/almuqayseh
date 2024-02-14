@@ -51,9 +51,11 @@ function Home() {
                     your business. We have a wide range of workers to choose
                     from. We are dedicated.
                   </p>
-                  <button className="btn btn-primary hero-button">
-                    <Link to="/contact-us">Consult Now</Link>
-                  </button>
+                  <Link to="/contact-us">
+                    <button className="btn btn-primary hero-button">
+                      Consult Now
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -64,7 +66,7 @@ function Home() {
           <div className="container">
             <div className="row row-gap-5">
               <div className="col-12 col-lg-6">
-                <h2 className="intro-heading">
+                <h2 className="intro-heading animation">
                   We turn your ideas into reality
                   <TipsAndUpdatesIcon
                     sx={{
@@ -74,8 +76,8 @@ function Home() {
                     }}
                   />
                 </h2>
-                <hr className="line-bar" />
-                <p className="intro-paragraph">
+                <hr className="line-bar animation" />
+                <p className="intro-paragraph animation">
                   Engaged in the business of Oil and Gas, Infrastructure,
                   Hydrocarbons, and Power sectors covering its services
                   throughout Kingdom of Saudi Arabia. In all our physical
@@ -83,16 +85,18 @@ function Home() {
                   share our commitment to high international standards of
                   operation.
                 </p>
-                <button className="intro-button btn btn-primary">
-                  <Link to="/about-us">Read More</Link>
-                </button>
+                <Link to="/about-us">
+                  <button className="intro-button btn btn-primary animation">
+                    Read More
+                  </button>
+                </Link>
               </div>
               <div className="col-12 col-lg-6">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-6 animation">
                     <img src={IntroBanner1} alt="Hero Banner" />
                   </div>
-                  <div className="col-6">
+                  <div className="col-6 animation">
                     <img src={IntroBanner2} alt="Hero Banner" />
                   </div>
                 </div>
@@ -104,13 +108,13 @@ function Home() {
         <div className="services-section">
           <div className="container">
             <div className="row row-gap-4">
-              <div className="col-12">
+              <div className="col-12 animation">
                 <p className="services-chip">We Are Innovative</p>
                 <h2 className="services-heading">Our Services</h2>
                 <hr className="line-bar" />
               </div>
               <div className="col-12 col-lg-4">
-                <div className="service-card">
+                <div className="service-card animation">
                   <DomainIcon />
                   <h3>Mechanical Works</h3>
                   <p>
@@ -122,7 +126,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-12 col-lg-4">
-                <div className="service-card">
+                <div className="service-card animation">
                   <ConstructionIcon />
                   <h3>Construction</h3>
                   <p>
@@ -134,7 +138,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-12 col-lg-4">
-                <div className="service-card">
+                <div className="service-card animation">
                   <TagIcon />
                   <h3>Manpower Supply</h3>
                   <p>
@@ -146,7 +150,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-12 col-lg-4">
-                <div className="service-card">
+                <div className="service-card animation">
                   <EngineeringIcon />
                   <h3>Civil Works</h3>
                   <p>
@@ -158,16 +162,16 @@ function Home() {
                 </div>
               </div>
               <div className="col-12 text-center">
-                <button className="services-button btn text-white mt-3">
-                  <Link to="/services">
+                <Link to="/services">
+                  <button className="services-button btn text-white mt-3 animation">
                     View all services
                     <KeyboardArrowRightIcon
                       sx={{
                         mt: "-3px",
                       }}
                     />
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -177,15 +181,17 @@ function Home() {
           <div className="container">
             <div className="row row-gap-5">
               <div className="col-12 col-md-6">
-                <p className="clients-chip">We turn ideas into works of art</p>
-                <h2 className="clients-heading">Our Clients</h2>
-                <hr className="line-bar" />
-                <p className="clients-paragraph">
+                <p className="clients-chip animation">
+                  We turn ideas into works of art
+                </p>
+                <h2 className="clients-heading animation">Our Clients</h2>
+                <hr className="line-bar animation" />
+                <p className="clients-paragraph animation">
                   A wonderful serenity has taken possession of my entire soul,
                   like these sweet mornings of spring.
                 </p>
                 <Link to="/clients">
-                  <button className="clients-button btn btn-primary">
+                  <button className="clients-button btn btn-primary animation">
                     See More
                   </button>
                 </Link>
@@ -193,27 +199,27 @@ function Home() {
               <div className="col-12 col-md-6">
                 <div className="row row-gap-3">
                   <div className="col-6 col-lg-3">
-                    <div className="client-card">
+                    <div className="client-card animation">
                       <img src="/images/icons/cpp.jpg" alt="Client" />
                     </div>
                   </div>
                   <div className="col-6 col-lg-3">
-                    <div className="client-card">
+                    <div className="client-card animation">
                       <img src="/images/icons/daelim.png" alt="Client" />
                     </div>
                   </div>
                   <div className="col-6 col-lg-3">
-                    <div className="client-card">
+                    <div className="client-card animation">
                       <img src="/images/icons/marafiq.jpg" alt="Client" />
                     </div>
                   </div>
                   <div className="col-6 col-lg-3">
-                    <div className="client-card">
+                    <div className="client-card animation">
                       <img src="/images/icons/SABIC.png" alt="Client" />
                     </div>
                   </div>
                   <div className="col-6 col-lg-3">
-                    <div className="client-card">
+                    <div className="client-card animation">
                       <img src="/images/icons/sipchem.gif" alt="Client" />
                     </div>
                   </div>
@@ -226,7 +232,7 @@ function Home() {
         <div className="team-section">
           <div className="container">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12 animation">
                 <p className="team-chip">We are a team of professionals</p>
                 <h2 className="team-heading">Our Team</h2>
                 <hr className="line-bar" />
@@ -235,7 +241,7 @@ function Home() {
               <div className="col-12">
                 <div className="row row-gap-4">
                   <div className="col-6 col-lg-4">
-                    <div className="team-card">
+                    <div className="team-card animation">
                       <img src="/images/persons/1.jpeg" alt="Team Member" />
                       <h3 className="team-name">
                         Aujan Bin Obaid Bin Abu Thaneen
@@ -244,28 +250,28 @@ function Home() {
                     </div>
                   </div>
                   <div className="col-6 col-lg-4">
-                    <div className="team-card">
+                    <div className="team-card animation">
                       <img src="/images/persons/2.jpeg" alt="Team Member" />
                       <h3 className="team-name">Parvez Shahidullah</h3>
                       <p className="team-title">Marketing Specialist</p>
                     </div>
                   </div>
                   <div className="col-6 col-lg-4">
-                    <div className="team-card">
+                    <div className="team-card animation">
                       <img src="/images/persons/3.jpg" alt="Team Member" />
                       <h3 className="team-name">Mohammad Shahjahan Chanchal</h3>
                       <p className="team-title">Planning Operating Manager</p>
                     </div>
                   </div>
                   <div className="col-6 col-lg-4">
-                    <div className="team-card">
+                    <div className="team-card animation">
                       <img src="/images/persons/4.jpg" alt="Team Member" />
                       <h3 className="team-name">Mohammad Sohel</h3>
                       <p className="team-title">Marketing Manager</p>
                     </div>
                   </div>
                   <div className="col-6 col-lg-4">
-                    <div className="team-card">
+                    <div className="team-card animation">
                       <img src="/images/persons/5.jpg" alt="Team Member" />
                       <h3 className="team-name">Mahdi Hasan Shihab</h3>
                       <p className="team-title">Operations Manager</p>
@@ -280,12 +286,12 @@ function Home() {
         <div className="contact-section">
           <div className="container">
             <div className="row row-gap-3">
-              <div className="col-12">
+              <div className="col-12 animation">
                 <p className="contact-chip">CONTACT US</p>
                 <h2 className="contact-heading">Get in touch</h2>
                 <hr className="line-bar" />
               </div>
-              <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
+              <div className="col-12 col-lg-6 d-flex flex-column justify-content-center animation">
                 <p className="contact-info">
                   <CallRoundedIcon sx={{ fontSize: 20 }} />
                   Phone: <br />
@@ -310,14 +316,14 @@ function Home() {
                   </span>
                 </p>
               </div>
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-6 animation">
                 <iframe
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=6181 Abi Al Ala Al Maari, 2952, Az Zahra, Riyadh 12812, Saudi Arabia"
                   width="600"
                   height="378"
                   frameBorder="0"
                   style={{ width: "100%" }}
-                  allowfullscreen=""
+                  allowFullScreen=""
                 ></iframe>
               </div>
             </div>

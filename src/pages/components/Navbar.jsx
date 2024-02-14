@@ -7,23 +7,18 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 function Navbar() {
   React.useEffect(() => {
-    const navbarMenuLayer = document.querySelector(".navbar-menu-layer");
-    const menuAction = document.querySelector(".menu-action button");
-    const navbarMenu = document.querySelector(".navbar-menu");
-
-    menuAction.addEventListener("click", () => {
-      if (navbarMenu.classList.contains("active")) {
-        navbarMenu.classList.remove("active");
-        navbarMenuLayer.classList.remove("active");
+    window.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 0) {
+        navbar.classList.add("shadow-sm");
       } else {
-        navbarMenu.classList.add("active");
-        navbarMenuLayer.classList.add("active");
+        navbar.classList.remove("shadow-sm");
       }
     });
   }, []);
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar menu-inactive">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             <img src={Logo} alt="Al Muqayseh Contracting Est" />
@@ -37,13 +32,26 @@ function Navbar() {
               CALL US! <span>(+966) 501163626</span>
             </p>
             <div className="menu-action">
-              <button className="btn btn-primary">
+              <button
+                className="btn btn-primary"
+                onClick={() => {
+                  document
+                    .querySelector(".navbar-menu")
+                    .classList.toggle("inactive");
+                  document
+                    .querySelector(".navbar-menu-layer")
+                    .classList.toggle("inactive");
+                  document
+                    .querySelector(".navbar")
+                    .classList.toggle("menu-inactive");
+                }}
+              >
                 <MenuRoundedIcon />
               </button>
             </div>
           </div>
         </div>
-        <div className="navbar-menu">
+        <div className="navbar-menu inactive">
           <div className="container">
             <div className="row row-gap-4">
               <div className="col-12 col-lg-4">
@@ -85,7 +93,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="navbar-menu-layer"></div>
+      <div className="navbar-menu-layer inactive"></div>
     </>
   );
 }
