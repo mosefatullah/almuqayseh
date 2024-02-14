@@ -20,7 +20,6 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import GroupsIcon from "@mui/icons-material/Groups";
-import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 
 function Home() {
  return (
@@ -60,16 +59,16 @@ function Home() {
     <div className="intro-section">
      <div className="container">
       <div className="counter">
-       <div className="counter-item">
-        <h3>10+</h3>
+       <div className="counter-item animation">
+        <h3>Long time</h3>
         <p>Years of Experience</p>
        </div>
-       <div className="counter-item">
-        <h3>500+</h3>
+       <div className="counter-item animation">
+        <h3>50+</h3>
         <p>Projects Completed</p>
        </div>
-       <div className="counter-item">
-        <h3>80k+</h3>
+       <div className="counter-item animation">
+        <h3>120k+</h3>
         <p>Workers Supplied</p>
        </div>
       </div>
@@ -77,6 +76,7 @@ function Home() {
        <div className="col-12 col-lg-6">
         <span className="intro-chip animation">
          <TipsAndUpdatesIcon
+          className="animation"
           sx={{
            fontSize: 40,
            opacity: "0.2",
@@ -190,33 +190,98 @@ function Home() {
       </div>
      </div>
     </div>
+    {/*-- __JOB__ --*/}
+    <div className="job-section">
+     <div className="container">
+      <div className="row row-gap-5">
+       <div className="col-12 col-lg-6 animation">
+        <p className="job-chip">Tailored Job Categories</p>
+        <h2 className="job-heading">Job Opportunities</h2>
+        <hr className="line-bar" />
+        <p className="job-paragraph">
+         Calling all individuals, especially those in Bangladesh, India, and
+         Pakistan, interested in working in Saudi Arabia! We provide a diverse
+         array of job opportunities. Contact us now to explore exciting career
+         prospects.
+        </p>
+       </div>
+       <div className="col-12">
+        <div className="row row-gap-5">
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/executive.jpg" alt="Job" />
+           <h3>Executive</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/technician.jpg" alt="Job" />
+           <h3>Technician</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/driver.jpg" alt="Job" />
+           <h3>Driver</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/hospitality.jpg" alt="Job" />
+           <h3>Hospitality</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/mechanical.jpg" alt="Job" />
+           <h3>Mechanical</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/food.jpg" alt="Job" />
+           <h3>Food & Beverage</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/agriculture.jpg" alt="Job" />
+           <h3>Agriculture</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/industry.jpg" alt="Job" />
+           <h3>Dairy Industry</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/operator.jpg" alt="Job" />
+           <h3>Operator</h3>
+          </div>
+         </div>
+         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
+          <div className="job-card animation">
+           <img src="/images/interface/cleaner.jpg" alt="Job" />
+           <h3>Cleaner</h3>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
     {/*-- __CLIENTS__ --*/}
     <div className="clients-section">
      <div className="container">
       <div className="row row-gap-5">
-       <div className="col-12 col-md-6">
-        <p className="clients-chip animation">
-         We turn ideas into works of art
-        </p>
-        <h2 className="clients-heading animation">
-         Our Clients
-         <GroupsIcon
-          sx={{
-           fontSize: 40,
-           opacity: "0.2",
-           ml: "10px",
-          }}
-         />
-        </h2>
-        <hr className="line-bar animation" />
-        <p className="clients-paragraph animation">
-         A wonderful serenity has taken possession of my entire soul, like these
-         sweet mornings of spring.
-        </p>
+       <div className="col-12 col-md-6 animation">
+        <p className="clients-chip">We turn ideas into works of art</p>
+        <h2 className="clients-heading">Our Clients</h2>
+        <hr className="line-bar" />
         <Link to="/clients">
-         <button className="clients-button btn btn-primary animation">
-          See More
-         </button>
+         <button className="clients-button btn btn-primary">See More</button>
         </Link>
        </div>
        <div className="col-12 col-md-6">
@@ -258,7 +323,7 @@ function Home() {
        <div className="intro col-12 animation">
         <p className="team-chip">We are a team of professionals</p>
         <h2 className="team-heading">
-         <SupervisorAccountIcon
+         <GroupsIcon
           sx={{
            fontSize: 40,
            opacity: "0.2",

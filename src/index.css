@@ -199,6 +199,7 @@ hr.line-bar {
   /*** Hero Section ***/
   /*** Intro Section ***/
   /*** Services Section ***/
+  /*** Job Section ***/
   /*** Clients Section ***/
   /*** Team Section ***/
   /*** Contact Section ***/
@@ -336,7 +337,7 @@ hr.line-bar {
 }
 .__home-page .intro-section .container .row img:hover {
   opacity: 0.75;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
 .__home-page .services-section {
@@ -368,7 +369,7 @@ hr.line-bar {
 }
 .__home-page .services-section .container .row .service-card:hover {
   background-color: #222223;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
 .__home-page .services-section .container .row .service-card svg {
@@ -401,8 +402,55 @@ hr.line-bar {
 .__home-page .services-section .container .row button:hover svg {
   margin-left: 10px;
 }
+.__home-page .job-section {
+  padding: 140px 20px;
+  background-color: #242526;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.__home-page .job-section .container .row .job-chip {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+.__home-page .job-section .container .row .job-heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.__home-page .job-section .container .row .line-bar {
+  margin: 0 0 30px 0;
+}
+.__home-page .job-section .container .row .job-paragraph {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #bfbfbf;
+  margin: 0;
+}
+.__home-page .job-section .container .row .job-card {
+  background-color: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.__home-page .job-section .container .row .job-card:hover {
+  opacity: 0.75;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+.__home-page .job-section .container .row .job-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.__home-page .job-section .container .row .job-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 26px 0;
+  text-align: center;
+}
 .__home-page .clients-section {
-  padding: 100px 20px;
+  padding: 120px 20px;
   background-color: #242526;
 }
 .__home-page .clients-section .container .row .clients-chip {
@@ -413,13 +461,6 @@ hr.line-bar {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
-}
-.__home-page .clients-section .container .row .clients-paragraph {
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-  color: #bfbfbf;
-  margin: 0;
 }
 .__home-page .clients-section .container .row .line-bar {
   margin: 0 0 30px 0;
@@ -454,11 +495,11 @@ hr.line-bar {
 }
 .__home-page .clients-section .container .row .client-card:hover {
   opacity: 0.75;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
 .__home-page .clients-section .container .row .client-card img {
-  width: 100px;
+  width: 100%;
   object-fit: cover;
 }
 .__home-page .team-section {
@@ -492,7 +533,7 @@ hr.line-bar {
 }
 .__home-page .team-section .container .row .team-card:hover {
   background-color: #222223;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
 .__home-page .team-section .container .row .team-card img {
@@ -561,14 +602,15 @@ hr.line-bar {
   padding: 3rem 0;
   padding-top: 8rem;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  color: #1e1e1e;
+  color: #fff;
 }
 .__clients-page .hero-section a,
 .__clients-page .hero-section span {
-  color: #1e1e1e;
+  color: #fff;
 }
 .__clients-page .clients-section {
   padding: 50px 0;
+  background-color: #fff;
 }
 .__clients-page .clients-section .main {
   border-radius: 0.2rem;
