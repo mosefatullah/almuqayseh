@@ -279,7 +279,7 @@ function Home() {
         {/*-- __CONTACT__ --*/}
         <div className="contact-section">
           <div className="container">
-            <div className="row">
+            <div className="row row-gap-3">
               <div className="col-12">
                 <p className="contact-chip">CONTACT US</p>
                 <h2 className="contact-heading">Get in touch</h2>

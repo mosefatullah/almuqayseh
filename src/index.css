@@ -145,6 +145,56 @@ hr.line-bar {
 .navbar .navbar-items .menu-action {
   margin-left: auto;
 }
+.navbar .navbar-menu {
+  width: 100%;
+  padding: 25px 0 35px 0;
+  margin-top: -500px;
+}
+.navbar .navbar-menu.active {
+  margin-top: 10px;
+}
+.navbar .navbar-menu ul {
+  margin-bottom: 0;
+}
+.navbar .navbar-menu li {
+  margin: 3px 0;
+}
+.navbar .navbar-menu li span {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #a9abaf;
+}
+.navbar .navbar-menu li a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #5c5e63;
+}
+.navbar .navbar-menu li a.active {
+  color: #fd9037;
+}
+.navbar .navbar-menu li a:hover {
+  color: #fd9037;
+}
+
+.navbar-menu-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(43, 44, 46, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 999;
+}
+.navbar-menu-layer.active {
+  display: block;
+}
 
 @media (max-width: 768px) {
   .navbar .navbar-items {
@@ -169,7 +219,7 @@ hr.line-bar {
 .__home-page .hero-section .hero-layout {
   width: 100%;
   min-height: 100vh;
-  padding: 10rem 0;
+  padding: 10rem 20px;
   background: linear-gradient(100deg, #fff 25%, rgba(255, 255, 255, 0.9) 35%, rgba(255, 255, 255, 0.7) 45%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 0.1) 100%);
 }
 .__home-page .hero-section .hero-layout .container {
@@ -179,7 +229,7 @@ hr.line-bar {
   width: 100%;
 }
 .__home-page .hero-section .hero-layout .container .row .hero-heading {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-weight: 500;
   line-height: 4.56rem;
   margin: 20px 0;
@@ -217,7 +267,7 @@ hr.line-bar {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .__home-page .intro-section {
-  padding: 100px 0;
+  padding: 100px 20px;
   background-color: #f7f7f7;
 }
 .__home-page .intro-section .container .row > div {
@@ -266,11 +316,11 @@ hr.line-bar {
 }
 .__home-page .intro-section .container .row img:hover {
   opacity: 0.75;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 .__home-page .services-section {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 .__home-page .services-section .container .row .services-chip {
   text-align: center;
@@ -298,7 +348,7 @@ hr.line-bar {
 }
 .__home-page .services-section .container .row .service-card:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 .__home-page .services-section .container .row .service-card svg {
@@ -330,7 +380,7 @@ hr.line-bar {
   margin-left: 10px;
 }
 .__home-page .clients-section {
-  padding: 100px 0;
+  padding: 100px 20px;
   background-color: #f7f7f7;
 }
 .__home-page .clients-section .container .row .clients-chip {
@@ -380,7 +430,7 @@ hr.line-bar {
 }
 .__home-page .clients-section .container .row .client-card:hover {
   opacity: 0.75;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 .__home-page .clients-section .container .row .client-card img {
@@ -389,7 +439,7 @@ hr.line-bar {
      object-fit: cover;
 }
 .__home-page .team-section {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 .__home-page .team-section .container .row .team-chip {
   color: rgba(43, 44, 46, 0.7);
@@ -414,7 +464,7 @@ hr.line-bar {
 }
 .__home-page .team-section .container .row .team-card:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 .__home-page .team-section .container .row .team-card img {
@@ -443,7 +493,7 @@ hr.line-bar {
   color: black;
 }
 .__home-page .contact-section {
-  padding: 100px 0;
+  padding: 100px 20px;
   background-color: #f7f7f7;
 }
 .__home-page .contact-section .container .row .contact-info {
@@ -483,7 +533,7 @@ hr.line-bar {
 }
 .__home-page .contact-section .container .row .contact-form:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 .__home-page .contact-section .container .row .contact-form h3 {
