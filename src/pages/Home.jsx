@@ -39,13 +39,14 @@ function Home() {
      <div className="hero-layout">
       <div className="container">
        <div className="row">
-        <div className="col-12 col-lg-8 d-flex flex-column h-100vh justify-content-center">
+        <div className="col-12 col-lg-7 d-flex flex-column h-100vh justify-content-center">
          <div className="hero-chip">Government Approved C.R. 1010630351</div>
          <h1 className="hero-heading">We are Al-Muqayseh Gen Cont Est.</h1>
          <p className="hero-paragraph">
-          We are dedicated to helping you find the best workers for your
-          business. We have a wide range of workers to choose from. We are
-          dedicated.
+          At Al-Muqayseh Gen Cont Est., we're driving Saudi Arabia's growth in
+          Oil, Gas, Infrastructure, and Power. With a commitment to excellence
+          and innovation, we forge partnerships for lasting impact. Join us in
+          shaping the future of industry.
          </p>
          <Link to="/contact-us">
           <button className="btn btn-primary hero-button">Consult Now</button>
