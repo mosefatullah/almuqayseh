@@ -35,9 +35,6 @@ body {
 }
 
 /*** Common Things ***/
-.dn {
- display: none;
-}
 mark {
  border-radius: 0.4rem;
 }
@@ -86,9 +83,7 @@ hr.line-bar {
 }
 
 /*** Common Styles ***/
-
-/*** Job Section ***/
-.job-section {
+.job-section_0 {
  padding: 140px 20px;
  background-color: $secondary-color;
  border-bottom: 1px solid rgba($primary-text-color, 0.1);
@@ -154,7 +149,7 @@ hr.line-bar {
   }
  }
 }
-.contact-section {
+.contact-section_0 {
  padding: 100px 20px;
  background-color: $secondary-color;
  .container {
@@ -187,6 +182,70 @@ hr.line-bar {
    }
    .line-bar {
     margin: 0 0 30px 0;
+   }
+  }
+ }
+}
+.team-section_0 {
+ padding: 100px 20px;
+ .container {
+  .row {
+   .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .team-chip {
+     color: rgba($primary-text-color, 0.7);
+     font-size: 0.9rem;
+    }
+    .team-heading {
+     font-size: 2.6rem;
+     font-weight: 600;
+     margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
+    }
+    .line-bar {
+     margin: 0 0 30px 0;
+    }
+   }
+   .team-card {
+    height: 100%;
+    text-align: center;
+    background-color: $secondary-color;
+    color: $primary-text-color;
+    border: 1px dashed rgba($primary-text-color, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+     background-color: darken($secondary-color, 1%);
+     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+     transform: scale(1.05);
+    }
+    img {
+     width: 100%;
+     display: flex;
+     aspect-ratio: 1/1;
+     background-color: #fff;
+     object-fit: cover;
+     border-radius: 0.3rem 0.3rem 0 0;
+     margin-bottom: 20px;
+     object-position: top;
+    }
+    h3 {
+     text-align: center;
+     font-size: 1.2rem;
+     font-weight: 400;
+     margin: 30px 0 4px 0;
+    }
+    p {
+     font-size: 0.8rem;
+     font-weight: 400;
+     line-height: 1.5rem;
+     margin: 0 0 30px 0;
+     color: lighten($primary-text-color, 25%);
+    }
    }
   }
  }
@@ -313,7 +372,7 @@ hr.line-bar {
 
 /*** Home Page ***/
 .__home-page {
- /*** Hero Section ***/
+ /* Hero Section */
  .hero-section {
   position: relative;
   background-image: url("../images/interface/construction-home-scaled.jpg");
@@ -392,7 +451,7 @@ hr.line-bar {
    }
   }
  }
- /*** Intro Section ***/
+ /* Intro Section */
  .intro-section {
   padding: 100px 20px;
   background-color: $secondary-color;
@@ -482,7 +541,7 @@ hr.line-bar {
    }
   }
  }
- /*** Services Section ***/
+ /* Services Section */
  .services-section {
   padding: 100px 20px;
   .container {
@@ -552,11 +611,11 @@ hr.line-bar {
    }
   }
  }
- /*** Job Section ***/
+ /* Job Section */
  .job-section {
-  @extend .job-section;
+  @extend .job-section_0;
  }
- /*** Clients Section ***/
+ /* Clients Section */
  .clients-section {
   padding: 120px 20px;
   background-color: $secondary-color;
@@ -617,84 +676,22 @@ hr.line-bar {
    }
   }
  }
- /*** Team Section ***/
+ /* Team Section */
  .team-section {
-  padding: 100px 20px;
-  .container {
-   .row {
-    .intro {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     .team-chip {
-      color: rgba($primary-text-color, 0.7);
-      font-size: 0.9rem;
-     }
-     .team-heading {
-      font-size: 2.6rem;
-      font-weight: 600;
-      margin-bottom: 30px;
-      span {
-       color: darken($primary-text-color, 25%);
-      }
-     }
-     .line-bar {
-      margin: 0 0 30px 0;
-     }
-    }
-    .team-card {
-     height: 100%;
-     text-align: center;
-     background-color: $secondary-color;
-     color: $primary-text-color;
-     border: 1px dashed rgba($primary-text-color, 0.2);
-     border-radius: 10px;
-     transition: all 0.3s ease;
-     &:hover {
-      background-color: darken($secondary-color, 1%);
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-      transform: scale(1.05);
-     }
-     img {
-      width: 100%;
-      display: flex;
-      aspect-ratio: 1/1;
-      background-color: #fff;
-      object-fit: cover;
-      border-radius: 0.3rem 0.3rem 0 0;
-      margin-bottom: 20px;
-      object-position: top;
-     }
-     h3 {
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin: 30px 0 4px 0;
-     }
-     p {
-      font-size: 0.8rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      margin: 0 0 30px 0;
-      color: lighten($primary-text-color, 25%);
-     }
-    }
-   }
-  }
+  @extend .team-section_0;
  }
- /*** Contact Section ***/
+ /* Contact Section */
  .contact-section {
-  @extend .contact-section;
+  @extend .contact-section_0;
  }
 }
 
 /*** Clients Page ***/
 .__clients-page {
- /*** Hero Section ***/
+ /* Hero Section */
  .hero-section {
   position: relative;
-  background-image: url("../images/interface/sketch-new-construction-scaled.jpg");
-  background-position: center;
+  background-color: $secondary-color;
   width: 100%;
   padding: 3rem 0;
   padding-top: 8rem;
@@ -705,10 +702,9 @@ hr.line-bar {
    color: $primary-text-color;
   }
  }
- /*** Clients Section ***/
+ /* Clients Section */
  .clients-section {
   padding: 50px 0;
-  background-color: #fff;
   .main {
    border-radius: 0.2rem;
    .wrapper {
@@ -722,11 +718,13 @@ hr.line-bar {
      animation: animate 25s alternate-reverse linear infinite;
     }
     .item {
-     margin: 0 10px;
+     padding: 10px;
+     background-color: #fff;
+     border-radius: 0.5rem;
      animation: animate 25s alternate linear infinite;
      img {
-      height: 55px;
-      border-radius: 0.5rem;
+      height: 75px;
+      object-fit: cover;
      }
     }
     @keyframes animate {
@@ -744,7 +742,7 @@ hr.line-bar {
 
 /*** About Page ***/
 .__about-page {
- /*** Hero Section ***/
+ /* Hero Section */
  .hero-section {
   position: relative;
   background-color: $secondary-color;
@@ -771,7 +769,7 @@ hr.line-bar {
    max-width: 700px;
   }
  }
- /*** About Section ***/
+ /* About Section */
  .about-section {
   padding: 100px 20px;
   .container {
@@ -815,7 +813,7 @@ hr.line-bar {
 
 /*** WhatWeDo Page  ***/
 .__whatwedo-page {
- /*** Hero Section ***/
+ /* Hero Section */
  .hero-section {
   position: relative;
   background-color: $secondary-color;
@@ -865,21 +863,18 @@ hr.line-bar {
    }
   }
  }
- /*** Intro Section ***/
+ /* Intro Section */
  .intro-section {
+  padding: 100px 20px;
   .container {
    @include image-center("/images/interface/Banner-Gradient-Green-Blue.webp");
    border-radius: 10px;
-   margin: 80px auto 40px auto;
-   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-
    & > div {
     padding: 100px 40px;
     margin: 0;
     width: 100%;
     background: rgba($primary-color, 0.3);
    }
-
    .intro-chip {
     color: rgba($primary-text-color, 0.7);
     font-size: 0.9rem;
@@ -917,9 +912,10 @@ hr.line-bar {
    }
   }
  }
- /*** FAQ Section ***/
+ /* FAQ Section */
  .faq-section {
-  padding: 100px 20px 30px 20px;
+  padding: 100px 20px;
+  background-color: $secondary-color;
   .container {
    .row {
     & > div {
@@ -954,9 +950,9 @@ hr.line-bar {
    }
   }
  }
- /*** Job Section ***/
+ /* Job Section */
  .job-section {
-  @extend .job-section;
+  @extend .job-section_0;
   background-color: transparent;
   .job-card {
    background-color: $secondary-color !important;
@@ -965,11 +961,20 @@ hr.line-bar {
 }
 
 /*** Contact Page ***/
-.contact-page {
- padding: 100px 20px;
- /*** Contact Section ***/
+.__contact-page {
+ /* Contact Section */
  .contact-section {
-  @extend .contact-section;
+  @extend .contact-section_0;
+ }
+}
+
+/*** Our Team Page ***/
+.__ourteam-page {
+ padding: 100px 20px;
+ /* Team Section */
+ .team-section {
+  @extend .team-section_0;
+  padding: 50px 20px;
  }
 }
 

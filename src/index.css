@@ -25,10 +25,6 @@ body {
 }
 
 /*** Common Things ***/
-.dn {
-  display: none;
-}
-
 mark {
   border-radius: 0.4rem;
 }
@@ -82,102 +78,162 @@ hr.line-bar {
 }
 
 /*** Common Styles ***/
-/*** Job Section ***/
-.job-section, .__whatwedo-page .job-section, .__home-page .job-section {
+.job-section_0, .__whatwedo-page .job-section, .__home-page .job-section {
   padding: 140px 20px;
   background-color: #242526;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.job-section .container .row .job-chip {
+.job-section_0 .container .row .job-chip, .__whatwedo-page .job-section .container .row .job-chip, .__home-page .job-section .container .row .job-chip {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
-.job-section .container .row .job-heading {
+.job-section_0 .container .row .job-heading, .__whatwedo-page .job-section .container .row .job-heading, .__home-page .job-section .container .row .job-heading {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.job-section .container .row .job-heading span {
+.job-section_0 .container .row .job-heading span, .__whatwedo-page .job-section .container .row .job-heading span, .__home-page .job-section .container .row .job-heading span {
   color: #bfbfbf;
 }
-.job-section .container .row .line-bar {
+.job-section_0 .container .row .line-bar, .__whatwedo-page .job-section .container .row .line-bar, .__home-page .job-section .container .row .line-bar {
   margin: 0 0 30px 0;
 }
-.job-section .container .row .job-paragraph {
+.job-section_0 .container .row .job-paragraph, .__whatwedo-page .job-section .container .row .job-paragraph, .__home-page .job-section .container .row .job-paragraph {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.8rem;
   color: #bfbfbf;
   margin: 0;
 }
-.job-section .container .row .job-card {
+.job-section_0 .container .row .job-card, .__whatwedo-page .job-section .container .row .job-card, .__home-page .job-section .container .row .job-card {
   background-color: rgba(30, 30, 30, 0.6);
   backdrop-filter: blur(10px);
   color: #fff;
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-.job-section .container .row .job-card:hover {
+.job-section_0 .container .row .job-card:hover, .__whatwedo-page .job-section .container .row .job-card:hover, .__home-page .job-section .container .row .job-card:hover {
   opacity: 0.75;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
 }
-.job-section .container .row .job-card img {
+.job-section_0 .container .row .job-card img, .__whatwedo-page .job-section .container .row .job-card img, .__home-page .job-section .container .row .job-card img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.job-section .container .row .job-card h3 {
+.job-section_0 .container .row .job-card h3, .__whatwedo-page .job-section .container .row .job-card h3, .__home-page .job-section .container .row .job-card h3 {
   font-size: 1rem;
   font-weight: 500;
   padding: 26px 0;
   text-align: center;
 }
-.job-section .container .row .job-button {
+.job-section_0 .container .row .job-button, .__whatwedo-page .job-section .container .row .job-button, .__home-page .job-section .container .row .job-button {
   color: #fff !important;
   transition: all 0.3s ease;
   border-color: transparent;
 }
-.job-section .container .row .job-button:hover {
+.job-section_0 .container .row .job-button:hover, .__whatwedo-page .job-section .container .row .job-button:hover, .__home-page .job-section .container .row .job-button:hover {
   opacity: 0.75;
   border-color: rgba(255, 255, 255, 0.5);
 }
-.job-section .container .row .job-button:hover svg {
+.job-section_0 .container .row .job-button:hover svg, .__whatwedo-page .job-section .container .row .job-button:hover svg, .__home-page .job-section .container .row .job-button:hover svg {
   margin-left: 10px;
 }
 
-.contact-section, .contact-page .contact-section, .__home-page .contact-section {
+.contact-section_0, .__contact-page .contact-section, .__home-page .contact-section {
   padding: 100px 20px;
   background-color: #242526;
 }
-.contact-section .container .row .contact-info {
+.contact-section_0 .container .row .contact-info, .__contact-page .contact-section .container .row .contact-info, .__home-page .contact-section .container .row .contact-info {
   font-weight: 600;
 }
-.contact-section .container .row .contact-info span {
+.contact-section_0 .container .row .contact-info span, .__contact-page .contact-section .container .row .contact-info span, .__home-page .contact-section .container .row .contact-info span {
   font-weight: 400;
   margin-left: 38px;
   color: #bfbfbf;
 }
-.contact-section .container .row .contact-info svg {
+.contact-section_0 .container .row .contact-info svg, .__contact-page .contact-section .container .row .contact-info svg, .__home-page .contact-section .container .row .contact-info svg {
   width: 28px;
   height: 28px;
   fill: #fd9037;
   margin-right: 10px;
 }
-.contact-section .container .row .contact-chip {
+.contact-section_0 .container .row .contact-chip, .__contact-page .contact-section .container .row .contact-chip, .__home-page .contact-section .container .row .contact-chip {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
-.contact-section .container .row .contact-heading {
+.contact-section_0 .container .row .contact-heading, .__contact-page .contact-section .container .row .contact-heading, .__home-page .contact-section .container .row .contact-heading {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.contact-section .container .row .contact-heading span {
+.contact-section_0 .container .row .contact-heading span, .__contact-page .contact-section .container .row .contact-heading span, .__home-page .contact-section .container .row .contact-heading span {
   color: #bfbfbf;
 }
-.contact-section .container .row .line-bar {
+.contact-section_0 .container .row .line-bar, .__contact-page .contact-section .container .row .line-bar, .__home-page .contact-section .container .row .line-bar {
   margin: 0 0 30px 0;
+}
+
+.team-section_0, .__ourteam-page .team-section, .__home-page .team-section {
+  padding: 100px 20px;
+}
+.team-section_0 .container .row .intro, .__ourteam-page .team-section .container .row .intro, .__home-page .team-section .container .row .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-section_0 .container .row .intro .team-chip, .__ourteam-page .team-section .container .row .intro .team-chip, .__home-page .team-section .container .row .intro .team-chip {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+.team-section_0 .container .row .intro .team-heading, .__ourteam-page .team-section .container .row .intro .team-heading, .__home-page .team-section .container .row .intro .team-heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.team-section_0 .container .row .intro .team-heading span, .__ourteam-page .team-section .container .row .intro .team-heading span, .__home-page .team-section .container .row .intro .team-heading span {
+  color: #bfbfbf;
+}
+.team-section_0 .container .row .intro .line-bar, .__ourteam-page .team-section .container .row .intro .line-bar, .__home-page .team-section .container .row .intro .line-bar {
+  margin: 0 0 30px 0;
+}
+.team-section_0 .container .row .team-card, .__ourteam-page .team-section .container .row .team-card, .__home-page .team-section .container .row .team-card {
+  height: 100%;
+  text-align: center;
+  background-color: #242526;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.team-section_0 .container .row .team-card:hover, .__ourteam-page .team-section .container .row .team-card:hover, .__home-page .team-section .container .row .team-card:hover {
+  background-color: #222223;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+.team-section_0 .container .row .team-card img, .__ourteam-page .team-section .container .row .team-card img, .__home-page .team-section .container .row .team-card img {
+  width: 100%;
+  display: flex;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  object-fit: cover;
+  border-radius: 0.3rem 0.3rem 0 0;
+  margin-bottom: 20px;
+  object-position: top;
+}
+.team-section_0 .container .row .team-card h3, .__ourteam-page .team-section .container .row .team-card h3, .__home-page .team-section .container .row .team-card h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 30px 0 4px 0;
+}
+.team-section_0 .container .row .team-card p, .__ourteam-page .team-section .container .row .team-card p, .__home-page .team-section .container .row .team-card p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0 0 30px 0;
+  color: white;
 }
 
 /*** Navbar ***/
@@ -300,13 +356,13 @@ hr.line-bar {
 }
 /*** Home Page ***/
 .__home-page {
-  /*** Hero Section ***/
-  /*** Intro Section ***/
-  /*** Services Section ***/
-  /*** Job Section ***/
-  /*** Clients Section ***/
-  /*** Team Section ***/
-  /*** Contact Section ***/
+  /* Hero Section */
+  /* Intro Section */
+  /* Services Section */
+  /* Job Section */
+  /* Clients Section */
+  /* Team Section */
+  /* Contact Section */
 }
 .__home-page .hero-section {
   position: relative;
@@ -586,75 +642,14 @@ hr.line-bar {
   width: 100%;
   object-fit: cover;
 }
-.__home-page .team-section {
-  padding: 100px 20px;
-}
-.__home-page .team-section .container .row .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.__home-page .team-section .container .row .intro .team-chip {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-}
-.__home-page .team-section .container .row .intro .team-heading {
-  font-size: 2.6rem;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-.__home-page .team-section .container .row .intro .team-heading span {
-  color: #bfbfbf;
-}
-.__home-page .team-section .container .row .intro .line-bar {
-  margin: 0 0 30px 0;
-}
-.__home-page .team-section .container .row .team-card {
-  height: 100%;
-  text-align: center;
-  background-color: #242526;
-  color: #fff;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-.__home-page .team-section .container .row .team-card:hover {
-  background-color: #222223;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
-}
-.__home-page .team-section .container .row .team-card img {
-  width: 100%;
-  display: flex;
-  aspect-ratio: 1/1;
-  background-color: #fff;
-  object-fit: cover;
-  border-radius: 0.3rem 0.3rem 0 0;
-  margin-bottom: 20px;
-  object-position: top;
-}
-.__home-page .team-section .container .row .team-card h3 {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin: 30px 0 4px 0;
-}
-.__home-page .team-section .container .row .team-card p {
-  font-size: 0.8rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin: 0 0 30px 0;
-  color: white;
-}
 /*** Clients Page ***/
 .__clients-page {
-  /*** Hero Section ***/
-  /*** Clients Section ***/
+  /* Hero Section */
+  /* Clients Section */
 }
 .__clients-page .hero-section {
   position: relative;
-  background-image: url("../images/interface/sketch-new-construction-scaled.jpg");
-  background-position: center;
+  background-color: #242526;
   width: 100%;
   padding: 3rem 0;
   padding-top: 8rem;
@@ -667,7 +662,6 @@ hr.line-bar {
 }
 .__clients-page .clients-section {
   padding: 50px 0;
-  background-color: #fff;
 }
 .__clients-page .clients-section .main {
   border-radius: 0.2rem;
@@ -684,12 +678,14 @@ hr.line-bar {
   animation: animate 25s alternate-reverse linear infinite;
 }
 .__clients-page .clients-section .main .wrapper .item {
-  margin: 0 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0.5rem;
   animation: animate 25s alternate linear infinite;
 }
 .__clients-page .clients-section .main .wrapper .item img {
-  height: 55px;
-  border-radius: 0.5rem;
+  height: 75px;
+  object-fit: cover;
 }
 @keyframes animate {
   0% {
@@ -702,8 +698,8 @@ hr.line-bar {
 
 /*** About Page ***/
 .__about-page {
-  /*** Hero Section ***/
-  /*** About Section ***/
+  /* Hero Section */
+  /* About Section */
 }
 .__about-page .hero-section {
   position: relative;
@@ -768,10 +764,10 @@ hr.line-bar {
 
 /*** WhatWeDo Page  ***/
 .__whatwedo-page {
-  /*** Hero Section ***/
-  /*** Intro Section ***/
-  /*** FAQ Section ***/
-  /*** Job Section ***/
+  /* Hero Section */
+  /* Intro Section */
+  /* FAQ Section */
+  /* Job Section */
 }
 .__whatwedo-page .hero-section {
   position: relative;
@@ -822,14 +818,15 @@ hr.line-bar {
   margin: 0;
   color: #bfbfbf;
 }
+.__whatwedo-page .intro-section {
+  padding: 100px 20px;
+}
 .__whatwedo-page .intro-section .container {
   background-image: url(/images/interface/Banner-Gradient-Green-Blue.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  margin: 80px auto 40px auto;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .__whatwedo-page .intro-section .container > div {
   padding: 100px 40px;
@@ -873,7 +870,8 @@ hr.line-bar {
   color: #fff;
 }
 .__whatwedo-page .faq-section {
-  padding: 100px 20px 30px 20px;
+  padding: 100px 20px;
+  background-color: #242526;
 }
 .__whatwedo-page .faq-section .container .row > div {
   padding-bottom: 50px;
@@ -912,10 +910,18 @@ hr.line-bar {
 }
 
 /*** Contact Page ***/
-.contact-page {
-  padding: 100px 20px;
-  /*** Contact Section ***/
+.__contact-page {
+  /* Contact Section */
 }
+/*** Our Team Page ***/
+.__ourteam-page {
+  padding: 100px 20px;
+  /* Team Section */
+}
+.__ourteam-page .team-section {
+  padding: 50px 20px;
+}
+
 /*** Footer ***/
 .footer {
   padding: 70px 20px;

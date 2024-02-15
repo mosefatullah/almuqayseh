@@ -1,10 +1,12 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useHref } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Clients from "./pages/Clients";
 import About from "./pages/About";
+import Services from "./pages/Services";
 import WhatWeDo from "./pages/WhatWeDo";
+import OurTeam from "./pages/OurTeam";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 
@@ -37,7 +39,7 @@ function App() {
       path="/about/our-team"
       element={
        <WithScrollback>
-        <Home />
+        <OurTeam />
        </WithScrollback>
       }
      />
@@ -55,7 +57,7 @@ function App() {
       path="/services"
       element={
        <WithScrollback>
-        <Home />
+        <Services />
        </WithScrollback>
       }
      />

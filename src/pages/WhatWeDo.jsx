@@ -58,8 +58,8 @@ function WhatWeDo() {
         </div>
         <div className="col-12 col-lg-6 d-flex justify-content-center">
          <img
-          src="/images/interface/construction-home-scaled.jpg"
-          alt="Introduction"
+          src="/images/interface/sketch-new-construction-scaled.jpg"
+          alt="Introduction to Our Services"
           className="animation"
           style={{
            maxHeight: "300px",
