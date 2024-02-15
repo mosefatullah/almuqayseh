@@ -80,6 +80,117 @@ hr.line-bar {
   transform: translateY(0px) scale(1);
  }
 }
+.accordion-button:hover,
+.accordion-button:focus {
+ box-shadow: none !important;
+}
+
+/*** Common Styles ***/
+
+/*** Job Section ***/
+.job-section {
+ padding: 140px 20px;
+ background-color: $secondary-color;
+ border-bottom: 1px solid rgba($primary-text-color, 0.1);
+ .container {
+  .row {
+   .job-chip {
+    color: rgba($primary-text-color, 0.7);
+    font-size: 0.9rem;
+   }
+   .job-heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    span {
+     color: darken($primary-text-color, 25%);
+    }
+   }
+   .line-bar {
+    margin: 0 0 30px 0;
+   }
+   .job-paragraph {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: darken($primary-text-color, 25%);
+    margin: 0;
+   }
+   .job-card {
+    background-color: rgba($primary-color, 0.6);
+    backdrop-filter: blur(10px);
+    color: $primary-text-color;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+     opacity: 0.75;
+     box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+     transform: scale(1.05);
+    }
+    img {
+     width: 100%;
+     object-fit: cover;
+     border-radius: 10px 10px 0 0;
+    }
+    h3 {
+     font-size: 1rem;
+     font-weight: 500;
+     padding: 26px 0;
+     text-align: center;
+    }
+   }
+   .job-button {
+    color: $primary-text-color !important;
+    transition: all 0.3s ease;
+    border-color: transparent;
+    &:hover {
+     opacity: 0.75;
+     border-color: rgba($primary-text-color, 0.5);
+     & svg {
+      margin-left: 10px;
+     }
+    }
+   }
+  }
+ }
+}
+.contact-section {
+ padding: 100px 20px;
+ background-color: $secondary-color;
+ .container {
+  .row {
+   .contact-info {
+    font-weight: 600;
+    span {
+     font-weight: 400;
+     margin-left: 38px;
+     color: darken($primary-text-color, 25%);
+    }
+    svg {
+     width: 28px;
+     height: 28px;
+     fill: $orange-color;
+     margin-right: 10px;
+    }
+   }
+   .contact-chip {
+    color: rgba($primary-text-color, 0.7);
+    font-size: 0.9rem;
+   }
+   .contact-heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    span {
+     color: darken($primary-text-color, 25%);
+    }
+   }
+   .line-bar {
+    margin: 0 0 30px 0;
+   }
+  }
+ }
+}
 
 /*** Navbar ***/
 .navbar {
@@ -88,7 +199,7 @@ hr.line-bar {
  left: 0;
  width: 100%;
  z-index: 10000;
- background-color: $primary-color;
+ background-color: $secondary-color;
  color: $primary-text-color;
  border-bottom: 1px solid rgba($primary-text-color, 0.1);
  &.menu-inactive {
@@ -150,18 +261,18 @@ hr.line-bar {
   &.inactive {
    margin-top: -500px;
   }
-  ul {
+  ol {
    margin-bottom: 0;
-  }
-  li {
-   margin: 3px 0;
-   user-select: none;
    span {
     display: block;
     padding-bottom: 10px;
     font-size: 0.9rem;
     color: lighten($primary-color, 50%);
    }
+  }
+  li {
+   margin: 3px 0;
+   user-select: none;
    a {
     text-decoration: none;
     transition: all 0.3s ease;
@@ -226,6 +337,21 @@ hr.line-bar {
     width: 100%;
     .row {
      width: 100%;
+     animation: animate1 0.7s ease;
+     @keyframes animate1 {
+      0% {
+       transform: translateY(-50px);
+       opacity: 0;
+      }
+      50% {
+       transform: translateY(30px);
+       opacity: 0.5;
+      }
+      to {
+       transform: translateY(0);
+       opacity: 1;
+      }
+     }
      .hero-heading {
       font-size: 3.6rem;
       font-weight: 500;
@@ -411,7 +537,7 @@ hr.line-bar {
       color: darken($primary-text-color, 25%);
      }
     }
-    button {
+    .services-button {
      color: $primary-text-color !important;
      transition: all 0.3s ease;
      border-color: transparent;
@@ -428,58 +554,7 @@ hr.line-bar {
  }
  /*** Job Section ***/
  .job-section {
-  padding: 140px 20px;
-  background-color: $secondary-color;
-  border-bottom: 1px solid rgba($primary-text-color, 0.1);
-  .container {
-   .row {
-    .job-chip {
-     color: rgba($primary-text-color, 0.7);
-     font-size: 0.9rem;
-    }
-    .job-heading {
-     font-size: 2.6rem;
-     font-weight: 600;
-     margin-bottom: 30px;
-     span {
-      color: darken($primary-text-color, 25%);
-     }
-    }
-    .line-bar {
-     margin: 0 0 30px 0;
-    }
-    .job-paragraph {
-     font-size: 0.9rem;
-     font-weight: 400;
-     line-height: 1.8rem;
-     color: darken($primary-text-color, 25%);
-     margin: 0;
-    }
-    .job-card {
-     background-color: rgba($primary-color, 0.6);
-     backdrop-filter: blur(10px);
-     color: $primary-text-color;
-     border-radius: 10px;
-     transition: all 0.3s ease;
-     &:hover {
-      opacity: 0.75;
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-      transform: scale(1.05);
-     }
-     img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-     }
-     h3 {
-      font-size: 1rem;
-      font-weight: 500;
-      padding: 26px 0;
-      text-align: center;
-     }
-    }
-   }
-  }
+  @extend .job-section;
  }
  /*** Clients Section ***/
  .clients-section {
@@ -609,41 +684,7 @@ hr.line-bar {
  }
  /*** Contact Section ***/
  .contact-section {
-  padding: 100px 20px;
-  background-color: $secondary-color;
-  .container {
-   .row {
-    .contact-info {
-     font-weight: 600;
-     span {
-      font-weight: 400;
-      margin-left: 38px;
-      color: darken($primary-text-color, 25%);
-     }
-     svg {
-      width: 28px;
-      height: 28px;
-      fill: $orange-color;
-      margin-right: 10px;
-     }
-    }
-    .contact-chip {
-     color: rgba($primary-text-color, 0.7);
-     font-size: 0.9rem;
-    }
-    .contact-heading {
-     font-size: 2.6rem;
-     font-weight: 600;
-     margin-bottom: 30px;
-     span {
-      color: darken($primary-text-color, 25%);
-     }
-    }
-    .line-bar {
-     margin: 0 0 30px 0;
-    }
-   }
-  }
+  @extend .contact-section;
  }
 }
 
@@ -701,9 +742,240 @@ hr.line-bar {
  }
 }
 
+/*** About Page ***/
+.__about-page {
+ /*** Hero Section ***/
+ .hero-section {
+  position: relative;
+  background-color: $secondary-color;
+  width: 100%;
+  padding: 10rem 0 5rem 0;
+  color: $primary-text-color;
+  h1 {
+   font-size: 2.6rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+  }
+  p {
+   font-size: 0.9rem;
+   font-weight: 400;
+   line-height: 1.8rem;
+   margin: 10px 0 0 0;
+   color: darken($primary-text-color, 25%);
+  }
+  img {
+   width: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   aspect-ratio: 3/3;
+   max-width: 700px;
+  }
+ }
+ /*** About Section ***/
+ .about-section {
+  padding: 100px 20px;
+  .container {
+   .row {
+    & > div {
+     padding-bottom: 50px;
+     border-bottom: 1px solid rgba($primary-text-color, 0.1);
+    }
+    & > div:last-child,
+    & > div:nth-child(5) {
+     padding-bottom: 0;
+     border-bottom: none;
+    }
+    .about-heading {
+     font-size: 2.6rem;
+     font-weight: 600;
+     margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
+    }
+    .line-bar {
+     margin: 18px 0 30px 0;
+    }
+    .about-paragraph {
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 1.8rem;
+     color: darken($primary-text-color, 25%);
+     margin: 0;
+    }
+    .special {
+     width: fit-content;
+     padding: 40px;
+     border-radius: 10px;
+    }
+   }
+  }
+ }
+}
+
+/*** WhatWeDo Page  ***/
+.__whatwedo-page {
+ /*** Hero Section ***/
+ .hero-section {
+  position: relative;
+  background-color: $secondary-color;
+  width: 100%;
+  padding: 10rem 0 5rem 0;
+  color: $primary-text-color;
+  text-align: center;
+  .line-bar {
+   margin: 0 auto 30px auto;
+  }
+  h1 {
+   font-size: 2.6rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+  }
+  p {
+   font-size: 0.9rem;
+   font-weight: 400;
+   line-height: 1.8rem;
+   margin: 10px 0 0 0;
+   color: darken($primary-text-color, 25%);
+  }
+  .counter {
+   width: 100%;
+   margin-top: 3rem;
+   background-color: rgba($primary-color, 0.75);
+   backdrop-filter: blur(10px);
+   border-radius: 10px;
+   padding: 35px 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   .counter-item {
+    text-align: center;
+    h3 {
+     font-size: 2.6rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+    }
+    p {
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 1.8rem;
+     margin: 0;
+     color: darken($primary-text-color, 25%);
+    }
+   }
+  }
+ }
+ /*** Intro Section ***/
+ .intro-section {
+  .container {
+   @include image-center("/images/interface/Banner-Gradient-Green-Blue.webp");
+   border-radius: 10px;
+   margin: 80px auto 40px auto;
+   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+   & > div {
+    padding: 100px 40px;
+    margin: 0;
+    width: 100%;
+    background: rgba($primary-color, 0.3);
+   }
+
+   .intro-chip {
+    color: rgba($primary-text-color, 0.7);
+    font-size: 0.9rem;
+   }
+   .intro-heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+   }
+   .line-bar {
+    margin-bottom: 30px;
+    height: 4px;
+   }
+   .intro-paragraph {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 0;
+   }
+   button {
+    width: fit-content !important;
+    padding: 10px 25px !important;
+    font-size: 1rem !important;
+    margin-top: 30px;
+    background-color: $third-color;
+    color: $primary-text-color;
+    font-weight: 600;
+    border-radius: 0;
+    color: $primary-text-color;
+    &:hover {
+     background-color: $primary-color;
+     border-color: transparent;
+     color: $primary-text-color;
+    }
+   }
+  }
+ }
+ /*** FAQ Section ***/
+ .faq-section {
+  padding: 100px 20px 30px 20px;
+  .container {
+   .row {
+    & > div {
+     padding-bottom: 50px;
+    }
+    & > div:last-child {
+     padding-bottom: 0;
+     border-bottom: none;
+    }
+    .faq-chip {
+     color: rgba($primary-text-color, 0.7);
+     font-size: 0.9rem;
+    }
+    .faq-heading {
+     font-size: 2.6rem;
+     font-weight: 600;
+     margin-bottom: 30px;
+     span {
+      color: darken($primary-text-color, 25%);
+     }
+    }
+    .line-bar {
+     margin: 18px 0 30px 0;
+    }
+    .faq-paragraph {
+     font-size: 0.9rem;
+     font-weight: 400;
+     line-height: 1.8rem;
+     color: darken($primary-text-color, 25%);
+     margin: 0;
+    }
+   }
+  }
+ }
+ /*** Job Section ***/
+ .job-section {
+  @extend .job-section;
+  background-color: transparent;
+  .job-card {
+   background-color: $secondary-color !important;
+  }
+ }
+}
+
+/*** Contact Page ***/
+.contact-page {
+ padding: 100px 20px;
+ /*** Contact Section ***/
+ .contact-section {
+  @extend .contact-section;
+ }
+}
+
 /*** Footer ***/
 .footer {
- padding: 70px 0;
+ padding: 70px 20px;
  background-color: $primary-color;
  color: $primary-text-color;
  border-top: 1px solid rgba($primary-text-color, 0.1);

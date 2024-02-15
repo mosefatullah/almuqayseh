@@ -10,6 +10,9 @@ function WithScrollback({ children }) {
    behavior: "instant",
   });
  }, [location]);
+
+ React.useEffect(() => {
+ }, []);
  return <>{children}</>;
 }
 

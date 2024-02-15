@@ -1,10 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import init from "./utils/Animation";
 
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Counter from "./components/Counter";
+import JobCategory from "./components/JobCategory";
+import ContactBox from "./components/ContactBox";
 
 // Assets
 import IntroBanner1 from "./../assets/civil-engineer-construction-worker.jpg";
@@ -15,13 +19,11 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import TagIcon from "@mui/icons-material/Tag";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import CallRoundedIcon from "@mui/icons-material/CallRounded";
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import GroupsIcon from "@mui/icons-material/Groups";
 
 function Home() {
+ React.useEffect(init, []);
  return (
   <div className="Home">
    {/*-- __HEAD__ --*/}
@@ -35,7 +37,7 @@ function Home() {
    {/*-- __MAIN__ --*/}
    <main className="__home-page">
     {/*-- __HERO__ --*/}
-    <div className="hero-section">
+    <section className="hero-section">
      <div className="hero-layout">
       <div className="container">
        <div className="row">
@@ -45,10 +47,9 @@ function Home() {
           We are <span>Al-Muqayseh</span> Gen Cont Est.
          </h1>
          <p className="hero-paragraph">
-          At Al-Muqayseh Gen Cont Est., we're driving Saudi Arabia's growth in
-          Oil, Gas, Infrastructure, and Power. With a commitment to excellence
-          and innovation, we forge partnerships for lasting impact. Join us in
-          shaping the future of industry.
+          At Al-Muqayseh Gen Cont Est., we're man power specialists. With a
+          commitment to excellence and innovation, we forge partnerships for
+          lasting impact. Join us in shaping the future of industry.
          </p>
          <Link to="/contact-us">
           <button className="btn btn-primary hero-button">Consult Now</button>
@@ -57,24 +58,11 @@ function Home() {
        </div>
       </div>
      </div>
-    </div>
+    </section>
     {/*-- __INTRO__ --*/}
-    <div className="intro-section">
+    <section className="intro-section">
      <div className="container">
-      <div className="counter">
-       <div className="counter-item animation">
-        <h3>Long time</h3>
-        <p>Years of Experience</p>
-       </div>
-       <div className="counter-item animation">
-        <h3>50+</h3>
-        <p>Projects Completed</p>
-       </div>
-       <div className="counter-item animation">
-        <h3>120k+</h3>
-        <p>Workers Supplied</p>
-       </div>
-      </div>
+      <Counter />
       <div className="row row-gap-5">
        <div className="col-12 col-lg-6">
         <span className="intro-chip animation">
@@ -91,9 +79,8 @@ function Home() {
         </h2>
         <hr className="line-bar animation" />
         <p className="intro-paragraph animation">
-         Engaged in the business of Oil and Gas, Infrastructure, Hydrocarbons,
-         and Power sectors covering its services throughout Kingdom of Saudi
-         Arabia. In all our physical operations we seek to work with clients and
+         Engaged in the man power business throughout Kingdom of Saudi Arabia.
+         In all our physical operations we seek to work with clients and
          partners which share our commitment to high international standards of
          operation.
         </p>
@@ -115,9 +102,9 @@ function Home() {
        </div>
       </div>
      </div>
-    </div>
+    </section>
     {/*-- __SERVICES__ --*/}
-    <div className="services-section">
+    <section className="services-section">
      <div className="container">
       <div className="row row-gap-4">
        <div className="col-12 animation">
@@ -192,9 +179,9 @@ function Home() {
        </div>
       </div>
      </div>
-    </div>
+    </section>
     {/*-- __JOB__ --*/}
-    <div className="job-section">
+    <section className="job-section">
      <div className="container">
       <div className="row row-gap-5">
        <div className="col-12 col-lg-6 animation">
@@ -210,75 +197,26 @@ function Home() {
          prospects.
         </p>
        </div>
-       <div className="col-12">
-        <div className="row row-gap-5">
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/executive.jpg" alt="Job" />
-           <h3>Executive</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/technician.jpg" alt="Job" />
-           <h3>Technician</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/driver.jpg" alt="Job" />
-           <h3>Driver</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/hospitality.jpg" alt="Job" />
-           <h3>Hospitality</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/mechanical.jpg" alt="Job" />
-           <h3>Mechanical</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/food.jpg" alt="Job" />
-           <h3>Food & Beverage</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/agriculture.jpg" alt="Job" />
-           <h3>Agriculture</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/industry.jpg" alt="Job" />
-           <h3>Dairy Industry</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/operator.jpg" alt="Job" />
-           <h3>Operator</h3>
-          </div>
-         </div>
-         <div className="col-6 col-lg-4 col-xl-3 col-xxl-2 animation">
-          <div className="job-card animation">
-           <img src="/images/interface/cleaner.jpg" alt="Job" />
-           <h3>Cleaner</h3>
-          </div>
-         </div>
-        </div>
+       <div className="col-12 mt-4">
+        <JobCategory />
+       </div>
+       <div className="text-center">
+        <Link to="/about/what-we-do">
+         <button className="job-button btn text-white mt-3 animation">
+          Explore What We Do
+          <KeyboardArrowRightIcon
+           sx={{
+            mt: "-3px",
+           }}
+          />
+         </button>
+        </Link>
        </div>
       </div>
      </div>
-    </div>
+    </section>
     {/*-- __CLIENTS__ --*/}
-    <div className="clients-section">
+    <section className="clients-section">
      <div className="container">
       <div className="row row-gap-5">
        <div className="col-12 col-md-6 animation">
@@ -322,9 +260,9 @@ function Home() {
        </div>
       </div>
      </div>
-    </div>
+    </section>
     {/*-- __TEAM__ --*/}
-    <div className="team-section">
+    <section className="team-section">
      <div className="container">
       <div className="row">
        <div className="intro col-12 animation">
@@ -383,55 +321,13 @@ function Home() {
        </div>
       </div>
      </div>
-    </div>
+    </section>
     {/*-- __CONTACT__ --*/}
-    <div className="contact-section">
-     <div className="container">
-      <div className="row row-gap-3">
-       <div className="col-12 animation">
-        <p className="contact-chip">CONTACT US</p>
-        <h2 className="contact-heading">
-         Get <span>in</span> touch
-        </h2>
-        <hr className="line-bar" />
-       </div>
-       <div className="col-12 col-lg-6 d-flex flex-column justify-content-center animation">
-        <p className="contact-info">
-         <CallRoundedIcon sx={{ fontSize: 20 }} />
-         Phone: <br />
-         <span>+966 55160 6778, +880 1322660800</span>
-        </p>
-        <p className="contact-info">
-         <CallRoundedIcon sx={{ fontSize: 20 }} />
-         Tel: <br />
-         <span>011 2442233</span>
-        </p>
-        <p className="contact-info">
-         <EmailRoundedIcon sx={{ fontSize: 20 }} />
-         Email: <br />
-         <span>parvez.sahidullah@gmail.com</span>
-        </p>
-        <p className="contact-info">
-         <LocationOnRoundedIcon sx={{ fontSize: 20 }} />
-         Address: <br />
-         <span>
-          Riyadh 6181 Abi Al Ala Al Maari, Az Zahra, Riyadh, Saudi Arabia
-         </span>
-        </p>
-       </div>
-       <div className="col-12 col-lg-6 animation">
-        <iframe
-         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=6181 Abi Al Ala Al Maari, 2952, Az Zahra, Riyadh 12812, Saudi Arabia"
-         width="600"
-         height="378"
-         frameBorder="0"
-         style={{ width: "100%" }}
-         allowFullScreen=""
-        ></iframe>
-       </div>
-      </div>
+    <section className="contact-section" id="contact-us">
+     <div className="container pb-5">
+      <ContactBox />
      </div>
-    </div>
+    </section>
    </main>
 
    {/*-- __FOOTER__ --*/}

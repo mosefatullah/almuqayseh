@@ -20,8 +20,8 @@ function Navbar() {
   <>
    <nav className="navbar menu-inactive">
     <div className="container">
-     <NavLink className="navbar-brand" to="/">
-      <img src={Logo} alt="Al Muqayseh Contracting Est" />
+     <NavLink className="navbar-brand" to="/" itemScope>
+      <img itemProp="image" src={Logo} alt="Al Muqayseh Contracting Est" />
       <div className="logo">
        <h3>Al-Muqayseh</h3>
        <p>General Contracting Est.</p>
@@ -51,10 +51,10 @@ function Navbar() {
      <div className="container">
       <div className="row row-gap-4">
        <div className="col-12 col-lg-4">
-        <ul className="list-unstyled">
-         <li>
+        <ol className="list-unstyled">
+         <div>
           <span>Basic</span>
-         </li>
+         </div>
          <li>
           <NavLink to="/">Home</NavLink>
          </li>
@@ -65,17 +65,23 @@ function Navbar() {
           <NavLink to="/services">Services</NavLink>
          </li>
          <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact-us">Contact</NavLink>
          </li>
-        </ul>
+         <li>
+          <a href="/about/what-we-do/#career">Career</a>
+         </li>
+        </ol>
        </div>
        <div className="col-12 col-lg-4">
-        <ul className="list-unstyled">
-         <li>
+        <ol className="list-unstyled">
+         <div>
           <span>About Us</span>
-         </li>
+         </div>
          <li>
           <NavLink to="/about-us">Our Company</NavLink>
+         </li>
+         <li>
+          <NavLink to="/about/what-we-do">What We Do</NavLink>
          </li>
          <li>
           <NavLink to="/about/our-team">Our Team</NavLink>
@@ -83,7 +89,7 @@ function Navbar() {
          <li>
           <NavLink to="/clients">Our Clients</NavLink>
          </li>
-        </ul>
+        </ol>
        </div>
       </div>
      </div>
