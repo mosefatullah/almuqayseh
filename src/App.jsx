@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Clients from "./pages/Clients";
@@ -17,6 +17,8 @@ function App() {
   <>
    <BrowserRouter>
     <Routes>
+     {/* Default English */}
+     <Route path="/" element={<Navigate to="/en" />} />
      <Route
       path="/"
       element={
@@ -25,7 +27,6 @@ function App() {
        </WithScrollback>
       }
      />
-
      <Route
       path="/about-us"
       element={
@@ -34,7 +35,6 @@ function App() {
        </WithScrollback>
       }
      />
-
      <Route
       path="/about/our-team"
       element={
@@ -43,7 +43,6 @@ function App() {
        </WithScrollback>
       }
      />
-
      <Route
       path="/about/what-we-do"
       element={
@@ -52,7 +51,6 @@ function App() {
        </WithScrollback>
       }
      />
-
      <Route
       path="/services"
       element={
@@ -61,7 +59,6 @@ function App() {
        </WithScrollback>
       }
      />
-
      <Route
       path="/clients"
       element={
@@ -70,7 +67,6 @@ function App() {
        </WithScrollback>
       }
      />
-
      <Route
       path="/contact-us"
       element={
@@ -80,6 +76,64 @@ function App() {
       }
      />
 
+     {/* Multi-Language */}
+     <Route
+      path="/:lang"
+      element={
+       <WithScrollback>
+        <Home />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/:lang/about-us"
+      element={
+       <WithScrollback>
+        <About />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/:lang/about/our-team"
+      element={
+       <WithScrollback>
+        <OurTeam />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/:lang/about/what-we-do"
+      element={
+       <WithScrollback>
+        <WhatWeDo />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/:lang/services"
+      element={
+       <WithScrollback>
+        <Services />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/:lang/clients"
+      element={
+       <WithScrollback>
+        <Clients />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/:lang/contact-us"
+      element={
+       <WithScrollback>
+        <Contact />
+       </WithScrollback>
+      }
+     />
+     {/* Error 404 */}
      <Route
       path="*"
       element={

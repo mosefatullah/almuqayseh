@@ -264,7 +264,7 @@ function Home() {
     {/*-- __TEAM__ --*/}
     <section className="team-section">
      <div className="container">
-       <Team/>
+      <Team />
      </div>
     </section>
     {/*-- __CONTACT__ --*/}
