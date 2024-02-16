@@ -102,7 +102,7 @@ function WhatWeDo() {
         <div className="accordion-item bg-dark border-dark-subtle">
          <h2 className="accordion-header">
           <button
-           className="accordion-button bg-secondary-subtle text-dark text-capitalize collapsed"
+           className="accordion-button collapsed"
            type="button"
            data-bs-toggle="collapse"
            data-bs-target="#collapse1"
@@ -156,7 +156,7 @@ function WhatWeDo() {
         <div className="accordion-item bg-dark border-dark-subtle">
          <h2 className="accordion-header">
           <button
-           className="accordion-button bg-secondary-subtle text-dark text-capitalize collapsed"
+           className="accordion-button collapsed"
            type="button"
            data-bs-toggle="collapse"
            data-bs-target="#collapse2"

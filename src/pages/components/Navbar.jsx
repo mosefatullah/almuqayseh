@@ -33,7 +33,10 @@ function Navbar() {
      </NavLink>
      <div className="navbar-items">
       <p className="contact-info">
-       CALL US! <span>+966 55160 6778</span>
+       CALL US!{" "}
+       <a href="tel:00966551606778" className="text-decoration-none">
+        <span>+966 55160 6778</span>
+       </a>
       </p>
       <div className="menu-action">
        <button

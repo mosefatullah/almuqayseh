@@ -9,6 +9,7 @@ import WhatWeDo from "./pages/WhatWeDo";
 import OurTeam from "./pages/OurTeam";
 import Contact from "./pages/Contact";
 import Career from "./pages/Career";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Error from "./pages/Error";
 
 import { ArrowCircleUp } from "@mui/icons-material";
@@ -84,6 +85,14 @@ function App() {
       element={
        <WithScrollback>
         <Contact />
+       </WithScrollback>
+      }
+     />
+     <Route
+      path="/privacy-policy"
+      element={
+       <WithScrollback>
+        <PrivacyPolicy />
        </WithScrollback>
       }
      />

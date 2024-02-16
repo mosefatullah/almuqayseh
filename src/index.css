@@ -907,6 +907,11 @@ hr.line-bar {
   padding: 100px 20px;
   background-color: #242526;
 }
+.__whatwedo-page .faq-section .container .accordion-button {
+  color: #1e1e1e;
+  text-transform: capitalize;
+  opacity: 0.9;
+}
 .__whatwedo-page .faq-section .container .row > div {
   padding-bottom: 50px;
 }
@@ -1059,6 +1064,27 @@ hr.line-bar {
   font-weight: 600;
   margin-bottom: 30px;
   color: #fd9037;
+}
+
+/*** Privacy Policy ***/
+.__privacy-policy {
+  padding: 130px 20px;
+}
+.__privacy-policy h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.__privacy-policy p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 10px 0 0 0;
+  color: #bfbfbf;
+}
+.__privacy-policy p b,
+.__privacy-policy p span {
+  color: #fff;
 }
 
 /*** Media Queries ***/
@@ -1227,6 +1253,94 @@ hr.line-bar {
     font-size: 2rem;
   }
   .__about-page .about-section .container .row .about-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__whatwedo-page .hero-section h1 {
+    font-size: 2rem;
+  }
+  .__whatwedo-page .hero-section p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__whatwedo-page .intro-section .container > div {
+    padding: 45px 20px !important;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .__whatwedo-page .intro-section .container .intro-chip {
+    font-size: 0.8rem;
+  }
+  .__whatwedo-page .intro-section .container .intro-heading {
+    font-size: 2rem;
+  }
+  .__whatwedo-page .intro-section .container .intro-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__whatwedo-page .intro-section .container button {
+    font-size: 0.8rem !important;
+  }
+  .__whatwedo-page .faq-section .container .accordion-button {
+    font-size: 0.9rem !important;
+  }
+  .__whatwedo-page .faq-section .container .row .faq-chip {
+    font-size: 0.8rem;
+  }
+  .__whatwedo-page .faq-section .container .row .faq-heading {
+    font-size: 2rem;
+  }
+  .__whatwedo-page .faq-section .container .row .faq-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__whatwedo-page .job-section .job-card h3 {
+    font-size: 1rem;
+  }
+  .__contact-page .contact-section .container .row .contact-info {
+    font-size: 0.8rem;
+  }
+  .__contact-page .contact-section .container .row .contact-info span {
+    padding: 3px 7px;
+  }
+  .__contact-page .contact-section .container .row .contact-chip {
+    font-size: 0.8rem;
+  }
+  .__ourteam-page .team-section .container .row .intro .team-chip {
+    font-size: 0.8rem;
+  }
+  .__ourteam-page .team-section .container .row .intro .team-heading {
+    font-size: 2rem;
+  }
+  .__ourteam-page .team-section .container .row .team-card h3 {
+    font-size: 1rem;
+  }
+  .__service-page .services-section .container .row .service-card h3 {
+    font-size: 1rem;
+  }
+  .__service-page .services-section .container .row .service-card p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__service-page .services-section .container .row .services-button {
+    font-size: 0.85rem;
+  }
+  .__error-page .hero-section h1 {
+    font-size: 2rem;
+  }
+  .__error-page .hero-section p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__error-page .hero-section .error-code {
+    font-size: 8rem;
+  }
+  .__privacy-policy {
+    padding: 150px 20px;
+  }
+  .__privacy-policy h1 {
+    font-size: 2rem;
+  }
+  .__privacy-policy p {
     font-size: 0.8rem;
     line-height: 1.7rem;
   }

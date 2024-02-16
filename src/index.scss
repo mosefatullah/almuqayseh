@@ -961,6 +961,11 @@ hr.line-bar {
   padding: 100px 20px;
   background-color: $secondary-color;
   .container {
+   .accordion-button {
+    color: $primary-color;
+    text-transform: capitalize;
+    opacity: 0.9;
+   }
    .row {
     & > div {
      padding-bottom: 50px;
@@ -1128,6 +1133,27 @@ hr.line-bar {
    font-weight: 600;
    margin-bottom: 30px;
    color: $orange-color;
+  }
+ }
+}
+
+/*** Privacy Policy ***/
+.__privacy-policy {
+ padding: 130px 20px;
+ h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+ }
+ p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 10px 0 0 0;
+  color: darken($primary-text-color, 25%);
+  b,
+  span {
+   color: $primary-text-color;
   }
  }
 }
@@ -1382,6 +1408,146 @@ hr.line-bar {
      }
     }
    }
+  }
+ }
+ .__whatwedo-page {
+  .hero-section {
+   h1 {
+    font-size: 2rem;
+   }
+   p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+   }
+  }
+  .intro-section {
+   .container {
+    & > div {
+     padding: 45px 20px !important;
+     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .intro-chip {
+     font-size: 0.8rem;
+    }
+    .intro-heading {
+     font-size: 2rem;
+    }
+    .intro-paragraph {
+     font-size: 0.8rem;
+     line-height: 1.7rem;
+    }
+    button {
+     font-size: 0.8rem !important;
+    }
+   }
+  }
+  .faq-section {
+   .container {
+    .accordion-button {
+     font-size: 0.9rem !important;
+    }
+    .row {
+     .faq-chip {
+      font-size: 0.8rem;
+     }
+     .faq-heading {
+      font-size: 2rem;
+     }
+     .faq-paragraph {
+      font-size: 0.8rem;
+      line-height: 1.7rem;
+     }
+    }
+   }
+  }
+  .job-section {
+   .job-card {
+    h3 {
+     font-size: 1rem;
+    }
+   }
+  }
+ }
+ .__contact-page {
+  .contact-section {
+   .container {
+    .row {
+     .contact-info {
+      font-size: 0.8rem;
+      span {
+       padding: 3px 7px;
+      }
+     }
+     .contact-chip {
+      font-size: 0.8rem;
+     }
+    }
+   }
+  }
+ }
+ .__ourteam-page {
+  .team-section {
+   .container {
+    .row {
+     .intro {
+      .team-chip {
+       font-size: 0.8rem;
+      }
+      .team-heading {
+       font-size: 2rem;
+      }
+     }
+     .team-card {
+      h3 {
+       font-size: 1rem;
+      }
+     }
+    }
+   }
+  }
+ }
+ .__service-page {
+  .services-section {
+   .container {
+    .row {
+     .service-card {
+      h3 {
+       font-size: 1rem;
+      }
+      p {
+       font-size: 0.8rem;
+       line-height: 1.7rem;
+      }
+     }
+     .services-button {
+      font-size: 0.85rem;
+     }
+    }
+   }
+  }
+ }
+ .__error-page {
+  .hero-section {
+   h1 {
+    font-size: 2rem;
+   }
+   p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+   }
+   .error-code {
+    font-size: 8rem;
+   }
+  }
+ }
+ .__privacy-policy {
+  padding: 150px 20px;
+  h1 {
+   font-size: 2rem;
+  }
+  p {
+   font-size: 0.8rem;
+   line-height: 1.7rem;
   }
  }
 }
