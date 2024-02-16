@@ -83,6 +83,31 @@ hr.line-bar {
 .accordion-button:focus {
  box-shadow: none !important;
 }
+.scroll-to-top {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 1000;
+ background-color: $third-color;
+ color: $primary-text-color;
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+ transition: all 0.3s ease;
+ svg {
+  width: 20px;
+  height: 20px;
+  fill: $primary-text-color;
+ }
+ &:hover {
+  background-color: darken($third-color, 5%);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+ }
+}
 
 /*** Component ***/
 .job-section_0 {
@@ -250,31 +275,6 @@ hr.line-bar {
     }
    }
   }
- }
-}
-.scroll-to-top {
- position: fixed;
- bottom: 20px;
- right: 20px;
- z-index: 1000;
- background-color: $third-color;
- color: $primary-text-color;
- border-radius: 50%;
- width: 40px;
- height: 40px;
- display: flex;
- justify-content: center;
- align-items: center;
- box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
- transition: all 0.3s ease;
- svg {
-  width: 20px;
-  height: 20px;
-  fill: $primary-text-color;
- }
- &:hover {
-  background-color: darken($third-color, 5%);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
  }
 }
 
@@ -482,7 +482,7 @@ hr.line-bar {
      .hero-paragraph {
       max-width: 600px;
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.8rem;
       margin: 0;
       color: darken($primary-text-color, 25%);
