@@ -11,9 +11,21 @@ import Contact from "./pages/Contact";
 import Career from "./pages/Career";
 import Error from "./pages/Error";
 
+import { ArrowCircleUp } from "@mui/icons-material";
+
 import WithScrollback from "./pages/contexts/WithScrollback";
 
 function App() {
+ React.useEffect(() => {
+  const scrollButton = document.querySelector(".scroll-to-top");
+  window.addEventListener("scroll", () => {
+   if (window.scrollY > 100) {
+    scrollButton.classList.remove("d-none");
+   } else {
+    scrollButton.classList.add("d-none");
+   }
+  });
+ }, []);
  return (
   <>
    <BrowserRouter>
@@ -91,6 +103,16 @@ function App() {
       }
      />
     </Routes>
+
+    {/*-- Scroll to Top  --*/}
+    <buutton
+     className="btn btn-primary d-none scroll-to-top"
+     onClick={() => {
+      window.scrollTo(0, 0);
+     }}
+    >
+     <ArrowCircleUp />
+    </buutton>
    </BrowserRouter>
   </>
  );

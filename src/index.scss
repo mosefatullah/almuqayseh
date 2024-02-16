@@ -34,7 +34,9 @@ body {
  color: $primary-text-color;
 }
 
-/*** Common Things ***/
+/******|||| Common ||||******/
+
+/*** Global ***/
 mark {
  border-radius: 0.4rem;
 }
@@ -82,7 +84,7 @@ hr.line-bar {
  box-shadow: none !important;
 }
 
-/*** Common Styles ***/
+/*** Component ***/
 .job-section_0 {
  padding: 140px 20px;
  background-color: $secondary-color;
@@ -250,6 +252,31 @@ hr.line-bar {
   }
  }
 }
+.scroll-to-top {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 1000;
+ background-color: $third-color;
+ color: $primary-text-color;
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+ transition: all 0.3s ease;
+ svg {
+  width: 20px;
+  height: 20px;
+  fill: $primary-text-color;
+ }
+ &:hover {
+  background-color: darken($third-color, 5%);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+ }
+}
 
 /*** Navbar ***/
 .__navbar {
@@ -259,7 +286,7 @@ hr.line-bar {
   left: 0;
   width: 100%;
   z-index: 10000;
-  background-color: $secondary-color;
+  background-color: lighten($primary-color, 5%);
   color: $primary-text-color;
   border-bottom: 1px solid rgba($primary-text-color, 0.1);
   &.menu-inactive {
@@ -370,6 +397,37 @@ hr.line-bar {
  }
 }
 
+/*** Footer ***/
+.__footer {
+ padding: 70px 20px;
+ background-color: lighten($primary-color, 5%);
+ color: $primary-text-color;
+ border-top: 1px solid rgba($primary-text-color, 0.1);
+ .container {
+  .row {
+   h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+   }
+   li {
+    margin: 3px 0;
+    a {
+     text-decoration: none;
+     transition: all 0.3s ease;
+     font-size: 1rem;
+     color: darken($primary-text-color, 20%);
+     &:hover {
+      color: $orange-color;
+     }
+    }
+   }
+  }
+ }
+}
+
+/******|||| Pages ||||******/
+
 /*** Home Page ***/
 .__home-page {
  /* Hero Section */
@@ -461,6 +519,7 @@ hr.line-bar {
    background-color: rgba($primary-color, 0.75);
    backdrop-filter: blur(10px);
    border-radius: 10px;
+   border: 1px solid rgba($primary-text-color, 0.04);
    padding: 35px 10px;
    display: flex;
    justify-content: space-around;
@@ -640,7 +699,7 @@ hr.line-bar {
      width: fit-content !important;
      padding: 10px 25px !important;
      font-size: 1rem !important;
-     margin-top: 30px;
+     margin-top: 10px;
      background-color: transparent;
      border-width: 2px;
      font-weight: 600;
@@ -699,7 +758,7 @@ hr.line-bar {
   color: $primary-text-color;
   a,
   span {
-   color: $primary-text-color;
+   color: darken($primary-text-color, 25%);
   }
  }
  /* Clients Section */
@@ -722,8 +781,12 @@ hr.line-bar {
      background-color: #fff;
      border-radius: 0.5rem;
      animation: animate 25s alternate linear infinite;
+     display: flex;
+     justify-content: center;
+     align-items: center;
      img {
-      height: 75px;
+      min-width: 100px;
+      max-height: 100px;
       object-fit: cover;
      }
     }
@@ -978,35 +1041,6 @@ hr.line-bar {
  }
 }
 
-/*** Footer ***/
-.__footer {
- padding: 70px 20px;
- background-color: $primary-color;
- color: $primary-text-color;
- border-top: 1px solid rgba($primary-text-color, 0.1);
- .container {
-  .row {
-   h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-   }
-   li {
-    margin: 3px 0;
-    a {
-     text-decoration: none;
-     transition: all 0.3s ease;
-     font-size: 1rem;
-     color: darken($primary-text-color, 20%);
-     &:hover {
-      color: $orange-color;
-     }
-    }
-   }
-  }
- }
-}
-
 /*** Service Page ***/
 .__service-page {
  /* Hero Section */
@@ -1030,6 +1064,7 @@ hr.line-bar {
    color: darken($primary-text-color, 25%);
   }
  }
+
  /* Services Section */
  .services-section {
   padding: 100px 20px;
