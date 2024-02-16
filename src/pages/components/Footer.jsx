@@ -31,7 +31,7 @@ function Footer() {
          <a href="/contact-us">Contact</a>
         </li>
         <li>
-         <a href="/about/what-we-do/#career">Career</a>
+         <a href="/career">Career</a>
         </li>
        </ol>
       </div>

@@ -68,7 +68,7 @@ function Navbar() {
           <NavLink to="/contact-us">Contact</NavLink>
          </li>
          <li>
-          <a href="/about/what-we-do/#career">Career</a>
+          <NavLink to="/career">Career</NavLink>
          </li>
         </ol>
        </div>

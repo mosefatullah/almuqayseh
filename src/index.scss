@@ -318,7 +318,7 @@ hr.line-bar {
   padding: 25px 0 35px 0;
   margin-top: 10px;
   &.inactive {
-   margin-top: -500px;
+   margin-top: -1000px;
   }
   ol {
    margin-bottom: 0;
@@ -1003,6 +1003,39 @@ hr.line-bar {
      }
     }
    }
+  }
+ }
+}
+
+/*** Media Queries ***/
+
+/*** Error Page ***/
+.__error-page {
+ /* Hero Section */
+ .hero-section {
+  position: relative;
+  background-color: $secondary-color;
+  width: 100%;
+  padding: 10rem 0 5rem 0;
+  color: $primary-text-color;
+  text-align: center;
+  h1 {
+   font-size: 2.6rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+  }
+  p {
+   font-size: 0.9rem;
+   font-weight: 400;
+   line-height: 1.8rem;
+   margin: 10px 0 0 0;
+   color: darken($primary-text-color, 25%);
+  }
+  .error-code {
+   font-size: 10rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+   color: $orange-color;
   }
  }
 }

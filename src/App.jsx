@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import WhatWeDo from "./pages/WhatWeDo";
 import OurTeam from "./pages/OurTeam";
 import Contact from "./pages/Contact";
+import Career from "./pages/Career";
 import Error from "./pages/Error";
 
 import WithScrollback from "./pages/contexts/WithScrollback";
@@ -17,8 +18,7 @@ function App() {
   <>
    <BrowserRouter>
     <Routes>
-     {/* Default English */}
-     <Route path="/" element={<Navigate to="/en" />} />
+     {/* Defaults */}
      <Route
       path="/"
       element={
@@ -76,64 +76,12 @@ function App() {
       }
      />
 
-     {/* Multi-Language */}
-     <Route
-      path="/:lang"
-      element={
-       <WithScrollback>
-        <Home />
-       </WithScrollback>
-      }
-     />
-     <Route
-      path="/:lang/about-us"
-      element={
-       <WithScrollback>
-        <About />
-       </WithScrollback>
-      }
-     />
-     <Route
-      path="/:lang/about/our-team"
-      element={
-       <WithScrollback>
-        <OurTeam />
-       </WithScrollback>
-      }
-     />
-     <Route
-      path="/:lang/about/what-we-do"
-      element={
-       <WithScrollback>
-        <WhatWeDo />
-       </WithScrollback>
-      }
-     />
-     <Route
-      path="/:lang/services"
-      element={
-       <WithScrollback>
-        <Services />
-       </WithScrollback>
-      }
-     />
-     <Route
-      path="/:lang/clients"
-      element={
-       <WithScrollback>
-        <Clients />
-       </WithScrollback>
-      }
-     />
-     <Route
-      path="/:lang/contact-us"
-      element={
-       <WithScrollback>
-        <Contact />
-       </WithScrollback>
-      }
-     />
-     {/* Error 404 */}
+     {/* Redirects */}
+     <Route path="/about" element={<Navigate to="/about-us" />} />
+     <Route path="/career" element={<Career />} />
+     <Route path="/contact" element={<Navigate to="/contact-us" />} />
+
+     {/* Errors */}
      <Route
       path="*"
       element={
