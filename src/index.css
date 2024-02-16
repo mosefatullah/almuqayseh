@@ -260,7 +260,35 @@ hr.line-bar {
   font-weight: 400;
   line-height: 1.5rem;
   margin: 0 0 30px 0;
-  color: white;
+  color: #bfbfbf;
+}
+
+.counter-section_0, .__whatwedo-page .hero-section .counter, .__home-page .intro-section .counter {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: rgba(30, 30, 30, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 35px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.counter-section_0 .counter-item, .__whatwedo-page .hero-section .counter .counter-item, .__home-page .intro-section .counter .counter-item {
+  text-align: center;
+}
+.counter-section_0 .counter-item h3, .__whatwedo-page .hero-section .counter .counter-item h3, .__home-page .intro-section .counter .counter-item h3 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.counter-section_0 .counter-item p, .__whatwedo-page .hero-section .counter .counter-item p, .__home-page .intro-section .counter .counter-item p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 0;
+  color: #bfbfbf;
 }
 
 /*** Navbar ***/
@@ -270,12 +298,12 @@ hr.line-bar {
   left: 0;
   width: 100%;
   z-index: 10000;
-  background-color: #2b2b2b;
+  background-color: #383838;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .__navbar .navbar.menu-inactive {
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: rgba(43, 43, 43, 0.8);
   backdrop-filter: blur(5px);
 }
 .__navbar .navbar .navbar-brand {
@@ -374,11 +402,6 @@ hr.line-bar {
 .__navbar .navbar-menu-layer.inactive {
   display: none;
 }
-@media (max-width: 768px) {
-  .__navbar .navbar-items {
-    width: 100%;
-  }
-}
 
 /*** Footer ***/
 .__footer {
@@ -452,7 +475,7 @@ hr.line-bar {
 }
 .__home-page .hero-section .hero-layout .container .row .hero-heading {
   font-size: 3.6rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 4.56rem;
   margin: 20px 0;
   margin-top: 32px;
@@ -464,15 +487,18 @@ hr.line-bar {
   max-width: 600px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   margin: 0;
   color: #bfbfbf;
+}
+.__home-page .hero-section .hero-layout .container .row a {
+  width: fit-content !important;
 }
 .__home-page .hero-section .hero-layout .container .row .hero-button {
   width: fit-content !important;
   padding: 10px 25px !important;
   font-size: 1rem !important;
-  margin-top: 30px;
+  margin-top: 37px;
 }
 .__home-page .hero-section .hero-layout .container .row .hero-button a {
   color: #1e1e1e !important;
@@ -492,31 +518,8 @@ hr.line-bar {
   position: relative;
 }
 .__home-page .intro-section .counter {
-  width: 100%;
-  background-color: rgba(30, 30, 30, 0.75);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  padding: 35px 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  background-color: rgba(43, 43, 43, 0.6);
   margin: -190px 0 0 0;
-}
-.__home-page .intro-section .counter .counter-item {
-  text-align: center;
-}
-.__home-page .intro-section .counter .counter-item h3 {
-  font-size: 2.6rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.__home-page .intro-section .counter .counter-item p {
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-  margin: 0;
-  color: #bfbfbf;
 }
 .__home-page .intro-section .container .row {
   padding-top: 50px;
@@ -641,7 +644,7 @@ hr.line-bar {
 }
 .__home-page .clients-section {
   padding: 120px 20px;
-  background-color: #242526;
+  background-color: #222223;
 }
 .__home-page .clients-section .container .row .clients-chip {
   color: rgba(255, 255, 255, 0.7);
@@ -849,32 +852,6 @@ hr.line-bar {
   margin: 10px 0 0 0;
   color: #bfbfbf;
 }
-.__whatwedo-page .hero-section .counter {
-  width: 100%;
-  margin-top: 3rem;
-  background-color: rgba(30, 30, 30, 0.75);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 35px 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.__whatwedo-page .hero-section .counter .counter-item {
-  text-align: center;
-}
-.__whatwedo-page .hero-section .counter .counter-item h3 {
-  font-size: 2.6rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.__whatwedo-page .hero-section .counter .counter-item p {
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-  margin: 0;
-  color: #bfbfbf;
-}
 .__whatwedo-page .intro-section {
   padding: 100px 20px;
 }
@@ -886,10 +863,13 @@ hr.line-bar {
   border-radius: 10px;
 }
 .__whatwedo-page .intro-section .container > div {
-  padding: 100px 40px;
+  padding: 90px 40px;
   margin: 0;
   width: 100%;
   background: rgba(30, 30, 30, 0.3);
+}
+.__whatwedo-page .intro-section .container > div > div:first-child {
+  padding: 0 20px;
 }
 .__whatwedo-page .intro-section .container .intro-chip {
   color: rgba(255, 255, 255, 0.7);
@@ -1084,3 +1064,150 @@ hr.line-bar {
 }
 
 /*** Media Queries ***/
+@media screen and (max-width: 768px) {
+  .job-section_0 .container .row .job-chip, .__home-page .job-section .container .row .job-chip, .__whatwedo-page .job-section .container .row .job-chip {
+    font-size: 0.8rem;
+  }
+  .job-section_0 .container .row .job-heading, .__home-page .job-section .container .row .job-heading, .__whatwedo-page .job-section .container .row .job-heading {
+    font-size: 2rem;
+  }
+  .job-section_0 .container .row .job-paragraph, .__home-page .job-section .container .row .job-paragraph, .__whatwedo-page .job-section .container .row .job-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .job-section_0 .container .row .job-card h3, .__home-page .job-section .container .row .job-card h3, .__whatwedo-page .job-section .container .row .job-card h3 {
+    font-size: 0.9rem;
+  }
+  .job-section_0 .container .row .job-button, .__home-page .job-section .container .row .job-button, .__whatwedo-page .job-section .container .row .job-button {
+    font-size: 0.9rem;
+  }
+  .contact-section_0 .container .row .contact-info, .__home-page .contact-section .container .row .contact-info, .__contact-page .contact-section .container .row .contact-info {
+    font-size: 0.84rem;
+    margin-bottom: 1.3rem;
+  }
+  .contact-section_0 .container .row .contact-chip, .__home-page .contact-section .container .row .contact-chip, .__contact-page .contact-section .container .row .contact-chip {
+    font-size: 0.8rem;
+  }
+  .contact-section_0 .container .row .contact-heading, .__home-page .contact-section .container .row .contact-heading, .__contact-page .contact-section .container .row .contact-heading {
+    font-size: 2rem;
+  }
+  .team-section_0 .container .row, .__home-page .team-section .container .row, .__ourteam-page .team-section .container .row {
+    row-gap: 2rem;
+  }
+  .team-section_0 .container .row .intro .team-chip, .__home-page .team-section .container .row .intro .team-chip, .__ourteam-page .team-section .container .row .intro .team-chip {
+    font-size: 0.8rem;
+  }
+  .team-section_0 .container .row .intro .team-heading, .__home-page .team-section .container .row .intro .team-heading, .__ourteam-page .team-section .container .row .intro .team-heading {
+    font-size: 2rem;
+  }
+  .team-section_0 .container .row .team-card h3, .__home-page .team-section .container .row .team-card h3, .__ourteam-page .team-section .container .row .team-card h3 {
+    font-size: 1rem;
+  }
+  .counter-section_0, .__home-page .intro-section .counter, .__whatwedo-page .hero-section .counter {
+    flex-direction: column;
+    padding: 50px 10px;
+    row-gap: 50px;
+  }
+  .counter-section_0 .counter-item h3, .__home-page .intro-section .counter .counter-item h3, .__whatwedo-page .hero-section .counter .counter-item h3 {
+    font-size: 2rem;
+  }
+  .counter-section_0 .counter-item p, .__home-page .intro-section .counter .counter-item p, .__whatwedo-page .hero-section .counter .counter-item p {
+    font-size: 0.8rem;
+  }
+  .__navbar .navbar .navbar-brand img {
+    max-height: 45px !important;
+  }
+  .__navbar .navbar .navbar-brand .logo h3 {
+    font-size: 1rem;
+  }
+  .__navbar .navbar .navbar-brand .logo p {
+    font-size: 0.7rem;
+  }
+  .__navbar .navbar .navbar-items {
+    width: 100%;
+  }
+  .__navbar .navbar .navbar-items .contact-info {
+    font-size: 0.8rem;
+  }
+  .__navbar .navbar .navbar-items .contact-info span {
+    padding: 3px 7px;
+  }
+  .__home-page .hero-section .hero-layout .container .row .hero-chip {
+    font-size: 0.8rem;
+  }
+  .__home-page .hero-section .hero-layout .container .row .hero-heading {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+  .__home-page .hero-section .hero-layout .container .row .hero-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+  }
+  .__home-page .hero-section .hero-layout .container .row .hero-button {
+    font-size: 0.8rem !important;
+  }
+  .__home-page .intro-section .container .row {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .__home-page .intro-section .container .row .intro-heading {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .__home-page .intro-section .container .row .intro-paragraph {
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.7rem;
+  }
+  .__home-page .intro-section .container .row .intro-button {
+    font-size: 0.8rem !important;
+  }
+  .__home-page .services-section .container .row .services-chip {
+    font-size: 0.8rem;
+  }
+  .__home-page .services-section .container .row .services-heading {
+    font-size: 2rem;
+  }
+  .__home-page .services-section .container .row .service-card svg {
+    width: 40px;
+    height: 40px;
+  }
+  .__home-page .services-section .container .row .service-card h3 {
+    font-size: 1.2rem;
+  }
+  .__home-page .services-section .container .row .service-card p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__home-page .services-section .container .row .services-button {
+    font-size: 0.85rem;
+  }
+  .__home-page .clients-section .container .row .clients-chip {
+    font-size: 0.8rem;
+  }
+  .__home-page .clients-section .container .row .clients-heading {
+    font-size: 2rem;
+  }
+  .__home-page .clients-section .container .row .clients-button {
+    font-size: 0.8rem !important;
+    padding: 7px 20px !important;
+  }
+  .__about-page .hero-section h1 {
+    font-size: 2rem;
+  }
+  .__about-page .hero-section p {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  .__about-page .hero-section button {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .__about-page .about-section .container .row .about-heading {
+    font-size: 2rem;
+  }
+  .__about-page .about-section .container .row .about-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+}

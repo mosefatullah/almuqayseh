@@ -56,7 +56,7 @@ function WhatWeDo() {
           <button className="btn btn-primary animation">View Services</button>
          </Link>
         </div>
-        <div className="col-12 col-lg-6 d-flex justify-content-center">
+        <div className="col-lg-6 d-none d-lg-flex justify-content-center">
          <img
           src="/images/interface/sketch-new-construction-scaled.jpg"
           alt="Introduction to Our Services"
