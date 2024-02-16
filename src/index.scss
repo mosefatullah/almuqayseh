@@ -1025,7 +1025,7 @@ hr.line-bar {
  }
 }
 
-/*** Service Page ***/
+/*** Services Page ***/
 .__service-page {
  /* Hero Section */
  .hero-section {
@@ -1055,6 +1055,7 @@ hr.line-bar {
   .container {
    .row {
     .service-card {
+     height: 100%;
      background-color: $secondary-color;
      color: $primary-text-color;
      border: 1px dashed rgba($primary-text-color, 0.2);
@@ -1066,7 +1067,6 @@ hr.line-bar {
      &:hover {
       background-color: darken($secondary-color, 1%);
       box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-      transform: scale(1.05);
      }
      svg {
       width: 50px;
@@ -1083,7 +1083,8 @@ hr.line-bar {
       font-weight: 400;
       line-height: 1.5rem;
       margin: 0;
-      margin-top: 20px;
+      margin-top: 26px;
+      text-align: left;
       color: darken($primary-text-color, 25%);
      }
      ul {
