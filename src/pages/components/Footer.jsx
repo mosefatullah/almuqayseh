@@ -52,6 +52,17 @@ function Footer() {
         </li>
        </ol>
       </div>
+      <div className="col-12 col-lg-4">
+       <h3>Legal</h3>
+       <ol className="list-unstyled">
+        <li>
+         <a>C.R. License No. 1010630351</a>
+        </li>
+        <li>
+         <a href="/privacy-policy">Privacy Policy</a>
+        </li>
+       </ol>
+      </div>
      </div>
      <hr className="mt-5" />
      <div className="d-flex justify-content-between">

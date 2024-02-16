@@ -98,6 +98,16 @@ function Navbar() {
          </li>
         </ol>
        </div>
+       <div className="col-12 col-lg-4">
+        <ol className="list-unstyled">
+         <div>
+          <span>Legal</span>
+         </div>
+         <li>
+          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+         </li>
+        </ol>
+       </div>
       </div>
      </div>
     </div>
