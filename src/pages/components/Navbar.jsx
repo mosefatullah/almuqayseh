@@ -17,11 +17,15 @@ function Navbar() {
   });
  }, []);
  return (
-  <>
+  <div className="__navbar">
    <nav className="navbar menu-inactive">
     <div className="container">
      <NavLink className="navbar-brand" to="/" itemScope>
-      <img itemProp="image" src={Logo} alt="Al Muqayseh Contracting Est" />
+      <img
+       itemProp="image"
+       src="/images/logo/logo.jpg"
+       alt="Al Muqayseh Contracting Est"
+      />
       <div className="logo">
        <h3>Al-Muqayseh</h3>
        <p>General Contracting Est.</p>
@@ -103,7 +107,7 @@ function Navbar() {
      document.querySelector(".navbar").classList.toggle("menu-inactive");
     }}
    ></div>
-  </>
+  </div>
  );
 }
 

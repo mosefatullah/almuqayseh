@@ -15,7 +15,7 @@ function WhatWeDo() {
   <div className="WhatWeDo">
    {/*-- __HEAD__ --*/}
    <Helmet>
-    <title>What We Do? - Al Muqayseh General Contracting Est.</title>
+    <title>Our Works – Al Muqayseh</title>
    </Helmet>
 
    {/*-- __NAVBAR__ --*/}
@@ -108,7 +108,7 @@ function WhatWeDo() {
            data-bs-target="#collapse1"
            aria-controls="collapse1"
           >
-           What We Do?
+           What is the scope of our services?
           </button>
          </h2>
          <div

@@ -252,118 +252,118 @@ hr.line-bar {
 }
 
 /*** Navbar ***/
-.navbar {
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- z-index: 10000;
- background-color: $secondary-color;
- color: $primary-text-color;
- border-bottom: 1px solid rgba($primary-text-color, 0.1);
- &.menu-inactive {
-  background-color: rgba($primary-color, 0.8);
-  backdrop-filter: blur(5px);
- }
- .navbar-brand {
-  font-weight: 500;
-  display: flex;
-  gap: 10px;
-  color: $primary-text-color;
-  img {
-   max-height: 55px;
-   border-radius: 5px;
-  }
-  .logo {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   h3,
-   p {
-    margin: 0;
-    font-weight: 400;
-   }
-   h3 {
-    text-transform: uppercase;
-    font-size: 1.25rem;
-   }
-   p {
-    font-size: 0.8rem;
-    margin-top: 5px;
-   }
-  }
- }
- .navbar-items {
-  display: flex;
-  height: 100%;
-  gap: 30px;
-  align-items: center;
-  .contact-info {
-   margin: 0;
-   font-size: 0.9rem;
-   span {
-    color: $primary-color;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: $orange-color;
-    margin-left: 8px;
-   }
-  }
-  .menu-action {
-   margin-left: auto;
-  }
- }
- .navbar-menu {
-  width: 100%;
-  padding: 25px 0 35px 0;
-  margin-top: 10px;
-  &.inactive {
-   margin-top: -1000px;
-  }
-  ol {
-   margin-bottom: 0;
-   span {
-    display: block;
-    padding-bottom: 10px;
-    font-size: 0.9rem;
-    color: lighten($primary-color, 50%);
-   }
-  }
-  li {
-   margin: 3px 0;
-   user-select: none;
-   a {
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-    color: $primary-text-color;
-    &.active {
-     color: $orange-color;
-    }
-    &:hover {
-     color: $orange-color;
-    }
-   }
-  }
- }
-}
-.navbar-menu-layer {
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- display: block;
- background-color: rgba($primary-color, 0.5);
- backdrop-filter: blur(5px);
- z-index: 999;
- transition: all 0.3s ease;
- &.inactive {
-  display: none;
- }
-}
-@media (max-width: 768px) {
+.__navbar {
  .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: $secondary-color;
+  color: $primary-text-color;
+  border-bottom: 1px solid rgba($primary-text-color, 0.1);
+  &.menu-inactive {
+   background-color: rgba($primary-color, 0.8);
+   backdrop-filter: blur(5px);
+  }
+  .navbar-brand {
+   font-weight: 500;
+   display: flex;
+   gap: 10px;
+   color: $primary-text-color;
+   img {
+    max-height: 55px;
+    border-radius: 5px;
+   }
+   .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h3,
+    p {
+     margin: 0;
+     font-weight: 400;
+    }
+    h3 {
+     text-transform: uppercase;
+     font-size: 1.25rem;
+    }
+    p {
+     font-size: 0.8rem;
+     margin-top: 5px;
+    }
+   }
+  }
+  .navbar-items {
+   display: flex;
+   height: 100%;
+   gap: 30px;
+   align-items: center;
+   .contact-info {
+    margin: 0;
+    font-size: 0.9rem;
+    span {
+     color: $primary-color;
+     padding: 5px 10px;
+     border-radius: 5px;
+     background-color: $orange-color;
+     margin-left: 8px;
+    }
+   }
+   .menu-action {
+    margin-left: auto;
+   }
+  }
+  .navbar-menu {
+   width: 100%;
+   padding: 25px 0 35px 0;
+   margin-top: 10px;
+   &.inactive {
+    margin-top: -1000px;
+   }
+   ol {
+    margin-bottom: 0;
+    span {
+     display: block;
+     padding-bottom: 10px;
+     font-size: 0.9rem;
+     color: lighten($primary-color, 50%);
+    }
+   }
+   li {
+    margin: 3px 0;
+    user-select: none;
+    a {
+     text-decoration: none;
+     transition: all 0.3s ease;
+     font-size: 1rem;
+     color: $primary-text-color;
+     &.active {
+      color: $orange-color;
+     }
+     &:hover {
+      color: $orange-color;
+     }
+    }
+   }
+  }
+ }
+ .navbar-menu-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba($primary-color, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  transition: all 0.3s ease;
+  &.inactive {
+   display: none;
+  }
+ }
+ @media (max-width: 768px) {
   .navbar-items {
    width: 100%;
   }
@@ -979,7 +979,7 @@ hr.line-bar {
 }
 
 /*** Footer ***/
-.footer {
+.__footer {
  padding: 70px 20px;
  background-color: $primary-color;
  color: $primary-text-color;
@@ -1007,7 +1007,82 @@ hr.line-bar {
  }
 }
 
-/*** Media Queries ***/
+/*** Service Page ***/
+.__service-page {
+ /* Hero Section */
+ .hero-section {
+  position: relative;
+  background-color: $secondary-color;
+  width: 100%;
+  padding: 10rem 0 5rem 0;
+  color: $primary-text-color;
+  text-align: center;
+  h1 {
+   font-size: 2.6rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+  }
+  p {
+   font-size: 0.9rem;
+   font-weight: 400;
+   line-height: 1.8rem;
+   margin: 10px 0 0 0;
+   color: darken($primary-text-color, 25%);
+  }
+ }
+ /* Services Section */
+ .services-section {
+  padding: 100px 20px;
+  .container {
+   .row {
+    .service-card {
+     background-color: $secondary-color;
+     color: $primary-text-color;
+     border: 1px dashed rgba($primary-text-color, 0.2);
+     padding: 35px 20px;
+     border-radius: 10px;
+     margin-bottom: 30px;
+     transition: all 0.3s ease;
+     text-align: center;
+     &:hover {
+      background-color: darken($secondary-color, 1%);
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+     }
+     svg {
+      width: 50px;
+      height: 50px;
+      fill: $orange-color;
+     }
+     h3 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 10px 0;
+     }
+     p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      margin: 0;
+      margin-top: 20px;
+      color: darken($primary-text-color, 25%);
+     }
+     ul {
+      margin-top: 20px;
+      text-align: left;
+      li {
+       font-size: 0.9rem;
+       font-weight: 400;
+       line-height: 1.5rem;
+       margin: 0;
+       color: darken($primary-text-color, 25%);
+      }
+     }
+    }
+   }
+  }
+ }
+}
 
 /*** Error Page ***/
 .__error-page {
@@ -1039,3 +1114,5 @@ hr.line-bar {
   }
  }
 }
+
+/*** Media Queries ***/

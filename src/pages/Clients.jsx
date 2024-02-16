@@ -13,7 +13,7 @@ function Clients() {
   <div className="Clients">
    {/*-- __HEAD__ --*/}
    <Helmet>
-    <title>Clients | Al Muqayseh General Contracting Est.</title>
+    <title>Clients – Al Muqayseh</title>
    </Helmet>
 
    {/*-- __NAVBAR__ --*/}

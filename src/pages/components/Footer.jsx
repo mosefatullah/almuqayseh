@@ -9,7 +9,7 @@ function Footer() {
  }, []);
  return (
   <>
-   <footer className="footer">
+   <footer className="__footer">
     <div className="container">
      <div className="row row-gap-4">
       <div className="col-12 col-lg-4">

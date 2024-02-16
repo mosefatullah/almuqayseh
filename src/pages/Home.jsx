@@ -28,7 +28,7 @@ function Home() {
   <div className="Home">
    {/*-- __HEAD__ --*/}
    <Helmet>
-    <title>Home | Al Muqayseh General Contracting Est.</title>
+    <title>Home – Al Muqayseh</title>
    </Helmet>
 
    {/*-- __NAVBAR__ --*/}

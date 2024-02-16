@@ -13,7 +13,7 @@ function Contact() {
   <div className="Contact">
    {/*-- __HEAD__ --*/}
    <Helmet>
-    <title>Contact Us - Al Muqayseh General Contracting Est.</title>
+    <title>Contact Us – Al Muqayseh</title>
    </Helmet>
 
    {/*-- __NAVBAR__ --*/}

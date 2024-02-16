@@ -17,7 +17,7 @@ function About() {
   <div className="About">
    {/*-- __HEAD__ --*/}
    <Helmet>
-    <title>About Us - Al Muqayseh General Contracting Est.</title>
+    <title>About Us – Al Muqayseh</title>
    </Helmet>
 
    {/*-- __NAVBAR__ --*/}
