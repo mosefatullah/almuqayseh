@@ -54,7 +54,7 @@ function Navbar() {
     <div className="navbar-menu inactive">
      <div className="container">
       <div className="row row-gap-4">
-       <div className="col-12 col-lg-4">
+       <div className="col-4">
         <ol className="list-unstyled">
          <div>
           <span>Basic</span>
@@ -76,7 +76,7 @@ function Navbar() {
          </li>
         </ol>
        </div>
-       <div className="col-12 col-lg-4">
+       <div className="col-4">
         <ol className="list-unstyled">
          <div>
           <span>About Us</span>

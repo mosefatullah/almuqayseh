@@ -304,7 +304,7 @@ hr.line-bar {
 }
 .__navbar .navbar.menu-inactive {
   background-color: rgba(43, 43, 43, 0.8);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 .__navbar .navbar .navbar-brand {
   font-weight: 500;
@@ -479,9 +479,6 @@ hr.line-bar {
   line-height: 4.56rem;
   margin: 20px 0;
   margin-top: 32px;
-}
-.__home-page .hero-section .hero-layout .container .row .hero-heading span {
-  color: #bfbfbf;
 }
 .__home-page .hero-section .hero-layout .container .row .hero-paragraph {
   max-width: 600px;
@@ -1115,6 +1112,9 @@ hr.line-bar {
   .counter-section_0 .counter-item p, .__home-page .intro-section .counter .counter-item p, .__whatwedo-page .hero-section .counter .counter-item p {
     font-size: 0.8rem;
   }
+  .__navbar .navbar {
+    background-color: rgba(43, 43, 43, 0.9) !important;
+  }
   .__navbar .navbar .navbar-brand img {
     max-height: 45px !important;
   }
@@ -1132,6 +1132,25 @@ hr.line-bar {
   }
   .__navbar .navbar .navbar-items .contact-info span {
     padding: 3px 7px;
+  }
+  .__navbar .navbar .navbar-menu ol span {
+    font-size: 0.8rem;
+  }
+  .__navbar .navbar .navbar-menu li a {
+    font-size: 0.9rem;
+  }
+  .__footer p {
+    font-size: 0.8rem;
+  }
+  .__footer svg {
+    width: 17px;
+    margin-top: -5px;
+  }
+  .__footer .container .row h3 {
+    font-size: 1.2rem;
+  }
+  .__footer .container .row li a {
+    font-size: 0.9rem;
   }
   .__home-page .hero-section .hero-layout .container .row .hero-chip {
     font-size: 0.8rem;

@@ -59,9 +59,9 @@ function Footer() {
        &copy; <span id="cpYear">2024</span> Al-Muqayseh General Contracting Est.
       </p>
       <ul className="list-unstyled d-flex">
-       <li className="ms-3">
+       <li className="ms-3 ">
         <a href="https://www.facebook.com/Almuqayseh">
-         <Facebook />
+         <Facebook className="h-auto" />
         </a>
        </li>
       </ul>

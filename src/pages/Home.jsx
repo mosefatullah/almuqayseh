@@ -43,9 +43,7 @@ function Home() {
        <div className="row">
         <div className="col-12 col-lg-7 d-flex flex-column h-100vh justify-content-center">
          <div className="hero-chip">Government Approved C.R. 1010630351</div>
-         <h1 className="hero-heading">
-          We <span>are</span> Al-Muqayseh Gen Cont Est.
-         </h1>
+         <h1 className="hero-heading">We are Al-Muqayseh Gen Cont Est.</h1>
          <p className="hero-paragraph">
           At Al-Muqayseh Gen Cont Est., we're man power specialists. With a
           commitment to excellence and innovation, we forge partnerships for

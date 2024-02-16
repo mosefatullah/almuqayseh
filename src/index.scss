@@ -319,7 +319,7 @@ hr.line-bar {
   border-bottom: 1px solid rgba($primary-text-color, 0.1);
   &.menu-inactive {
    background-color: rgba($thirdly-color, 0.8);
-   backdrop-filter: blur(5px);
+   backdrop-filter: blur(6px);
   }
   .navbar-brand {
    font-weight: 500;
@@ -498,9 +498,6 @@ hr.line-bar {
       line-height: 4.56rem;
       margin: 20px 0;
       margin-top: 32px;
-      span {
-       color: darken($primary-text-color, 25%);
-      }
      }
      .hero-paragraph {
       max-width: 600px;
@@ -1213,6 +1210,7 @@ hr.line-bar {
  }
  .__navbar {
   .navbar {
+   background-color: rgba($thirdly-color, 0.9) !important;
    .navbar-brand {
     img {
      max-height: 45px !important;
@@ -1232,6 +1230,39 @@ hr.line-bar {
      font-size: 0.8rem;
      span {
       padding: 3px 7px;
+     }
+    }
+   }
+   .navbar-menu {
+    ol {
+     span {
+      font-size: 0.8rem;
+     }
+    }
+    li {
+     a {
+      font-size: 0.9rem;
+     }
+    }
+   }
+  }
+ }
+ .__footer {
+  p {
+   font-size: 0.8rem;
+  }
+  svg {
+   width: 17px;
+   margin-top: -5px;
+  }
+  .container {
+   .row {
+    h3 {
+     font-size: 1.2rem;
+    }
+    li {
+     a {
+      font-size: 0.9rem;
      }
     }
    }
