@@ -7,4 +7,4 @@ var callback = function (err) {
   console.log("Published!");
  }
 };
-ghpages.publish("dist", { cname: "saadalamin.com" }, callback);
+ghpages.publish("dist", { cname: "almuqayseh.com" }, callback);

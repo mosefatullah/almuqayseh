@@ -114,14 +114,14 @@ function App() {
     </Routes>
 
     {/*-- Scroll to Top  --*/}
-    <buutton
+    <button
      className="btn btn-primary d-none scroll-to-top"
      onClick={() => {
       window.scrollTo(0, 0);
      }}
     >
      <ArrowCircleUp />
-    </buutton>
+    </button>
    </BrowserRouter>
   </>
  );
