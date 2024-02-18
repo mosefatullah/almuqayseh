@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import init from "./utils/Animation";
+import websiteSchema from "./schemas/websiteSchema";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -29,6 +30,7 @@ function Home() {
    {/*-- __HEAD__ --*/}
    <Helmet>
     <title>Home – Al Muqayseh</title>
+    <script type="application/ld+json">{websiteSchema}</script>
    </Helmet>
 
    {/*-- __NAVBAR__ --*/}
