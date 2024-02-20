@@ -64,7 +64,7 @@ function Footer() {
        </ol>
       </div>
      </div>
-     <hr className="mt-5" />
+     <hr className="mt-5 mb-4" />
      <div className="d-flex justify-content-between">
       <p>
        &copy; <span id="cpYear">2024</span> Al-Muqayseh General Contracting Est.

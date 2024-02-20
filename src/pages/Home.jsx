@@ -13,8 +13,6 @@ import ContactBox from "./components/ContactBox";
 import Team from "./components/Team";
 
 // Assets
-import IntroBanner1 from "./../assets/civil-engineer-construction-worker.jpg";
-import IntroBanner2 from "./../assets/crop-architect-opening-blueprint-scaled.jpg";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import DomainIcon from "@mui/icons-material/Domain";
 import ConstructionIcon from "@mui/icons-material/Construction";
@@ -93,10 +91,10 @@ function Home() {
        <div className="col-12 col-lg-6 col-xl-5">
         <div className="row">
          <div className="col-6 animation">
-          <img src={IntroBanner1} alt="Hero Banner" />
+          <img src="/images/interface/civil-engineer-construction-worker.jpg" alt="Hero Banner" />
          </div>
          <div className="col-6 animation">
-          <img src={IntroBanner2} alt="Hero Banner" />
+          <img src="/images/interface/crop-architect-opening-blueprint-scaled.jpg" alt="Hero Banner" />
          </div>
         </div>
        </div>

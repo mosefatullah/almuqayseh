@@ -4,7 +4,7 @@ function Counter() {
  return (
   <div className="counter">
    <div className="counter-item">
-    <h3 className="animation">Long time</h3>
+    <h3 className="animation">Ages</h3>
     <p className="animation">Years of Experience</p>
    </div>
    <div className="counter-item">

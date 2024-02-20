@@ -2,17 +2,18 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 // Assets
-import Logo from "../../assets/logo.jpg";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 function Navbar() {
  React.useEffect(() => {
   window.addEventListener("scroll", () => {
    const navbar = document.querySelector(".navbar");
-   if (window.scrollY > 0) {
-    navbar.classList.add("shadow-sm");
+   if (window.scrollY > 100) {
+    navbar.classList.add("shadow-md");
+    navbar.classList.add("navbar-scrolled");
    } else {
-    navbar.classList.remove("shadow-sm");
+    navbar.classList.remove("shadow-md");
+    navbar.classList.remove("navbar-scrolled");
    }
   });
  }, []);
