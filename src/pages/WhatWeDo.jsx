@@ -40,7 +40,7 @@ function WhatWeDo() {
      <div className="container p-0">
       <div>
        <div className="row row-gap-4">
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-xl-6">
          <p className="intro-chip animation">Our Services</p>
          <h2 className="intro-heading animation">
           Introduction to Our Services
@@ -56,7 +56,7 @@ function WhatWeDo() {
           <button className="btn btn-primary animation">View Services</button>
          </Link>
         </div>
-        <div className="col-lg-6 d-none d-lg-flex justify-content-center">
+        <div className="col-xl-6 d-none d-xl-flex justify-content-center align-items-center">
          <img
           src="/images/interface/sketch-new-construction-scaled.jpg"
           alt="Introduction to Our Services"
