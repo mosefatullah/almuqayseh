@@ -7,6 +7,7 @@ import init from "./utils/animation";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+// Assets
 import AdsClickIcon from "@mui/icons-material/AdsClick";
 import FilterHdrIcon from "@mui/icons-material/FilterHdr";
 import StarBorderPurple500Icon from "@mui/icons-material/StarBorderPurple500";

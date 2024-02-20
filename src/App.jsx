@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
+// Pages
 import Home from "./pages/Home";
 import Clients from "./pages/Clients";
 import About from "./pages/About";
@@ -12,8 +13,10 @@ import Career from "./pages/Career";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Error from "./pages/Error";
 
+// Assets
 import { ArrowCircleUp } from "@mui/icons-material";
 
+// Contexts
 import WithScrollback from "./pages/contexts/WithScrollback";
 
 function App() {
