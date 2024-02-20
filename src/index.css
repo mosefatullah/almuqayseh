@@ -209,6 +209,7 @@ hr.line-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 .team-section_0 .container .row .intro .team-chip, .__ourteam-page .team-section .container .row .intro .team-chip, .__home-page .team-section .container .row .intro .team-chip {
   color: rgba(255, 255, 255, 0.7);
@@ -1115,17 +1116,20 @@ hr.line-bar {
   .contact-section_0 .container .row .contact-heading, .__home-page .contact-section .container .row .contact-heading, .__contact-page .contact-section .container .row .contact-heading {
     font-size: 2rem;
   }
+  .team-section_0 .container .intro, .__home-page .team-section .container .intro, .__ourteam-page .team-section .container .intro {
+    margin-bottom: 0 !important;
+  }
+  .team-section_0 .container .intro .team-chip, .__home-page .team-section .container .intro .team-chip, .__ourteam-page .team-section .container .intro .team-chip {
+    font-size: 0.8rem;
+  }
+  .team-section_0 .container .intro .team-heading, .__home-page .team-section .container .intro .team-heading, .__ourteam-page .team-section .container .intro .team-heading {
+    font-size: 2rem;
+  }
   .team-section_0 .container .row, .__home-page .team-section .container .row, .__ourteam-page .team-section .container .row {
     row-gap: 2rem;
   }
-  .team-section_0 .container .row .intro .team-chip, .__home-page .team-section .container .row .intro .team-chip, .__ourteam-page .team-section .container .row .intro .team-chip {
-    font-size: 0.8rem;
-  }
-  .team-section_0 .container .row .intro .team-heading, .__home-page .team-section .container .row .intro .team-heading, .__ourteam-page .team-section .container .row .intro .team-heading {
-    font-size: 2rem;
-  }
   .team-section_0 .container .row .team-card h3, .__home-page .team-section .container .row .team-card h3, .__ourteam-page .team-section .container .row .team-card h3 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .counter-section_0, .__home-page .intro-section .counter, .__whatwedo-page .hero-section .counter {
     flex-direction: column;
@@ -1140,6 +1144,13 @@ hr.line-bar {
   }
   .__navbar .navbar {
     background-color: rgba(43, 43, 43, 0.9) !important;
+  }
+  .__navbar .navbar.navbar-scrolled .navbar-items {
+    display: block;
+    width: auto !important;
+  }
+  .__navbar .navbar.navbar-scrolled .navbar-items .contact-info {
+    display: none;
   }
   .__navbar .navbar .navbar-brand img {
     max-height: 45px !important;
@@ -1194,7 +1205,7 @@ hr.line-bar {
   }
   .__home-page .intro-section .container .row {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 85px;
   }
   .__home-page .intro-section .container .row .intro-heading {
     font-size: 2rem;
@@ -1313,6 +1324,9 @@ hr.line-bar {
   }
   .__ourteam-page .team-section .container .row .team-card h3 {
     font-size: 1rem;
+  }
+  .__clients-page .hero-section {
+    padding-top: 9rem;
   }
   .__service-page .services-section .container .row .service-card h3 {
     font-size: 1rem;

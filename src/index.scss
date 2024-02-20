@@ -222,6 +222,7 @@ hr.line-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
     .team-chip {
      color: rgba($primary-text-color, 0.7);
      font-size: 0.9rem;
@@ -1203,19 +1204,20 @@ hr.line-bar {
  }
  .team-section_0 {
   .container {
+   .intro {
+    margin-bottom: 0 !important;
+    .team-chip {
+     font-size: 0.8rem;
+    }
+    .team-heading {
+     font-size: 2rem;
+    }
+   }
    .row {
     row-gap: 2rem;
-    .intro {
-     .team-chip {
-      font-size: 0.8rem;
-     }
-     .team-heading {
-      font-size: 2rem;
-     }
-    }
     .team-card {
      h3 {
-      font-size: 1rem;
+      font-size: 1rem !important;
      }
     }
    }
@@ -1237,6 +1239,15 @@ hr.line-bar {
  .__navbar {
   .navbar {
    background-color: rgba($thirdly-color, 0.9) !important;
+   &.navbar-scrolled {
+    .navbar-items {
+     display: block;
+     width: auto !important;
+     .contact-info {
+      display: none;
+     }
+    }
+   }
    .navbar-brand {
     img {
      max-height: 45px !important;
@@ -1321,7 +1332,7 @@ hr.line-bar {
    .container {
     .row {
      text-align: center;
-     margin-top: 30px;
+     padding-top: 85px;
      .intro-heading {
       font-size: 2rem;
       text-align: left;
@@ -1504,6 +1515,11 @@ hr.line-bar {
      }
     }
    }
+  }
+ }
+ .__clients-page {
+  .hero-section {
+   padding-top: 9rem;
   }
  }
  .__service-page {

@@ -19,11 +19,14 @@ import WithScrollback from "./pages/contexts/WithScrollback";
 function App() {
  React.useEffect(() => {
   const scrollButton = document.querySelector(".scroll-to-top");
+  const navbar = document.querySelector(".navbar");
   window.addEventListener("scroll", () => {
    if (window.scrollY > 100) {
     scrollButton.classList.remove("d-none");
+    navbar.classList.add("navbar-scrolled");
    } else {
     scrollButton.classList.add("d-none");
+    navbar.classList.remove("navbar-scrolled");
    }
   });
  }, []);

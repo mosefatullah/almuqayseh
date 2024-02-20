@@ -63,7 +63,7 @@ function Home() {
     <section className="intro-section">
      <div className="container">
       <Counter />
-      <div className="row row-gap-5">
+      <div className="row row-gap-5 gap-xl-5">
        <div className="col-12 col-lg-6">
         <span className="intro-chip animation">
          <TipsAndUpdatesIcon
@@ -90,7 +90,7 @@ function Home() {
          </button>
         </Link>
        </div>
-       <div className="col-12 col-lg-6">
+       <div className="col-12 col-lg-6 col-xl-5">
         <div className="row">
          <div className="col-6 animation">
           <img src={IntroBanner1} alt="Hero Banner" />
